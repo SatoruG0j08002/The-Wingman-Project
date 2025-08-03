@@ -20,13 +20,13 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="glass backdrop-blur-xl bg-white/80 dark:bg-black/20 border-b border-white/20 sticky top-0 z-50">
+    <nav className="glass backdrop-blur-xl bg-card/80 border-b border-border/20 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0 flex items-center" onClick={closeMobileMenu}>
-              <i className="fas fa-atom text-3xl text-primary mr-3 animate-pulse-quantum"></i>
-              <span className="text-xl font-bold text-primary">Teen Quantum Challenge</span>
+              <span className="text-3xl text-primary mr-3 animate-pulse-quantum">⟨Q⟩</span>
+              <span className="text-xl font-bold text-primary">QubitMinded</span>
             </Link>
           </div>
           
@@ -86,7 +86,7 @@ export default function Navigation() {
       
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden glass-dark backdrop-blur-xl bg-white/90 dark:bg-black/30 border-t border-white/20">
+        <div className="md:hidden glass backdrop-blur-xl bg-card/90 border-t border-border/20">
           <div className="px-2 pt-2 pb-3 space-y-1">
             <Link
               href="/"

@@ -16,10 +16,10 @@ export default function Home() {
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-10">
-            <i className="fas fa-atom text-7xl mb-6 animate-pulse-quantum text-quantum"></i>
+            <div className="text-7xl mb-6 animate-pulse-quantum text-quantum">⟨Q⟩</div>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight tracking-tight">
-            Teen Quantum Physics Challenge 2024
+            QubitMinded Teen Quantum Physics Challenge 2024
           </h1>
           <p className="text-xl md:text-2xl mb-10 font-light max-w-4xl mx-auto text-purple-100 leading-relaxed">
             Dive deep into peer-reviewed quantum research and present your findings through creative slideshows and posters
@@ -37,7 +37,7 @@ export default function Home() {
               className="bg-accent hover:bg-accent/90 text-white px-10 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 shadow-2xl inline-block text-center animate-glow"
               data-testid="button-submit-entry"
             >
-              Submit Your Research
+              Submit Your Entry
             </Link>
           </div>
         </div>
@@ -56,7 +56,7 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-10">
             <div className="text-center p-8 rounded-3xl glass bg-card/50 hover:bg-card/80 transition-all duration-300 border border-border/50 hover:border-primary/20 hover:shadow-2xl">
               <div className="bg-gradient-to-br from-secondary to-primary text-white w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
-                <i className="fas fa-microscope text-2xl"></i>
+                <span className="text-3xl font-bold">|0⟩</span>
               </div>
               <h3 className="text-2xl font-semibold mb-4 text-foreground">Research Excellence</h3>
               <p className="text-muted-foreground leading-relaxed">
@@ -66,7 +66,7 @@ export default function Home() {
             
             <div className="text-center p-8 rounded-3xl glass bg-card/50 hover:bg-card/80 transition-all duration-300 border border-border/50 hover:border-primary/20 hover:shadow-2xl">
               <div className="bg-gradient-to-br from-accent to-quantum text-white w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
-                <i className="fas fa-presentation text-2xl"></i>
+                <span className="text-3xl font-bold">|1⟩</span>
               </div>
               <h3 className="text-2xl font-semibold mb-4 text-foreground">Creative Expression</h3>
               <p className="text-muted-foreground leading-relaxed">
@@ -76,7 +76,7 @@ export default function Home() {
             
             <div className="text-center p-8 rounded-3xl glass bg-card/50 hover:bg-card/80 transition-all duration-300 border border-border/50 hover:border-primary/20 hover:shadow-2xl">
               <div className="bg-gradient-to-br from-quantum to-accent text-white w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
-                <i className="fas fa-university text-2xl"></i>
+                <span className="text-3xl font-bold">|+⟩</span>
               </div>
               <h3 className="text-2xl font-semibold mb-4 text-foreground">Expert Evaluation</h3>
               <p className="text-muted-foreground leading-relaxed">
@@ -157,11 +157,11 @@ export default function Home() {
                   Start your quantum research journey by diving into cutting-edge peer-reviewed articles and creating compelling presentations.
                 </p>
                 <Link
-                  href="/submission"
+              href="/submission"
                   className="w-full bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white py-4 px-8 rounded-2xl font-semibold text-lg transition-all duration-300 inline-block text-center shadow-xl hover:shadow-2xl"
                   data-testid="button-start-research"
                 >
-                  Start Your Research
+                  Start Your Entry
                 </Link>
               </div>
             </div>

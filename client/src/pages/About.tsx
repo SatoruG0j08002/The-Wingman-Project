@@ -3,10 +3,20 @@ export default function About() {
     <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold text-primary mb-8">About the Challenge</h1>
+          <h1 className="text-5xl md:text-6xl font-bold text-primary mb-8">About QubitMinded</h1>
           <p className="text-xl text-muted-foreground max-w-5xl mx-auto leading-relaxed">
-            The Teen Quantum Physics Challenge empowers high school students to explore cutting-edge quantum research through peer-reviewed articles and express their understanding through creative slideshows and posters.
+            QubitMinded Teen Quantum Physics Challenge empowers high school students to explore cutting-edge quantum research through peer-reviewed articles and express their understanding through creative slideshows and posters.
           </p>
+          
+          <div className="mt-8 glass bg-accent/10 border border-accent/20 p-6 rounded-3xl max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold text-accent mb-3 flex items-center justify-center">
+              <span className="text-3xl mr-3">🏴󠁵󠁳󠁴󠁸󠁿</span>
+              2024 Texas Pilot Program
+            </h2>
+            <p className="text-muted-foreground leading-relaxed text-center">
+              This year we are piloting QubitMinded in Texas high schools to establish our foundation and refine the competition experience. We're excited to expand nationwide for the 2026 challenge, bringing quantum education opportunities to students across America.
+            </p>
+          </div>
         </div>
 
         {/* Competition Details */}
@@ -16,20 +26,21 @@ export default function About() {
             <div className="space-y-8">
               <div className="glass bg-card/60 p-8 rounded-3xl border border-border/50">
                 <h3 className="font-bold text-xl mb-4 flex items-center text-foreground">
-                  <i className="fas fa-user-graduate text-secondary mr-4 text-2xl"></i>
+                  <span className="text-secondary mr-4 text-3xl">⟨ψ|</span>
                   Eligibility Requirements
                 </h3>
                 <ul className="text-muted-foreground space-y-3 leading-relaxed">
                   <li>• Must be enrolled in high school (grades 9-12)</li>
                   <li>• Ages 13-18 at time of submission</li>
                   <li>• <strong className="text-foreground">Individual entries only</strong> - showcase your personal research skills</li>
-                  <li>• Open to students worldwide</li>
+                  <li>• <strong className="text-accent">2024 Texas Pilot:</strong> Open to Texas high school students</li>
+                  <li>• <strong className="text-primary">2026 Expansion:</strong> Nationwide competition planned</li>
                 </ul>
               </div>
               
               <div className="glass bg-card/60 p-8 rounded-3xl border border-border/50">
                 <h3 className="font-bold text-xl mb-4 flex items-center text-foreground">
-                  <i className="fas fa-microscope text-accent mr-4 text-2xl"></i>
+                  <span className="text-accent mr-4 text-3xl">|ψ⟩</span>
                   Research Format
                 </h3>
                 <ul className="text-muted-foreground space-y-3 leading-relaxed">
@@ -42,7 +53,7 @@ export default function About() {
               
               <div className="glass bg-card/60 p-8 rounded-3xl border border-border/50">
                 <h3 className="font-bold text-xl mb-4 flex items-center text-foreground">
-                  <i className="fas fa-balance-scale text-quantum mr-4 text-2xl"></i>
+                  <span className="text-quantum mr-4 text-3xl">⊗</span>
                   Academic Integrity
                 </h3>
                 <ul className="text-muted-foreground space-y-3 leading-relaxed">
@@ -121,7 +132,7 @@ export default function About() {
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center glass bg-white/10 p-8 rounded-3xl border border-white/20">
                 <div className="bg-gradient-to-br from-yellow-400 to-yellow-600 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl">
-                  <i className="fas fa-trophy text-3xl text-white"></i>
+                  <span className="text-4xl">🏆</span>
                 </div>
                 <h3 className="text-2xl font-bold mb-3">1st Place</h3>
                 <p className="text-purple-100 leading-relaxed">$5,000 scholarship + mentorship with quantum researchers</p>
@@ -129,7 +140,7 @@ export default function About() {
               
               <div className="text-center glass bg-white/10 p-8 rounded-3xl border border-white/20">
                 <div className="bg-gradient-to-br from-gray-400 to-gray-600 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl">
-                  <i className="fas fa-medal text-3xl text-white"></i>
+                  <span className="text-4xl">🥈</span>
                 </div>
                 <h3 className="text-2xl font-bold mb-3">2nd Place</h3>
                 <p className="text-purple-100 leading-relaxed">$3,000 scholarship + quantum research lab visit</p>
@@ -137,7 +148,7 @@ export default function About() {
               
               <div className="text-center glass bg-white/10 p-8 rounded-3xl border border-white/20">
                 <div className="bg-gradient-to-br from-orange-500 to-orange-700 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl">
-                  <i className="fas fa-award text-3xl text-white"></i>
+                  <span className="text-4xl">🥉</span>
                 </div>
                 <h3 className="text-2xl font-bold mb-3">3rd Place</h3>
                 <p className="text-purple-100 leading-relaxed">$1,500 scholarship + certificate of excellence</p>

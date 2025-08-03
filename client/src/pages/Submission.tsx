@@ -19,17 +19,17 @@ export default function Submission() {
     <section className="py-20 bg-background">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold text-primary mb-8">Submit Your Research</h1>
+          <h1 className="text-5xl md:text-6xl font-bold text-primary mb-8">Submit Your Entry</h1>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Ready to present your quantum physics research? Share your peer-reviewed analysis through creative slideshows or posters.
+            Ready to submit your quantum entry? Follow our step-by-step guide to ensure your presentation showcases your best work analyzing peer-reviewed quantum research.
           </p>
         </div>
 
         {/* Pre-submission Checklist */}
         <div className="glass bg-gradient-to-br from-accent/5 to-quantum/5 border border-accent/20 p-10 mb-12 rounded-3xl">
           <h3 className="text-2xl font-bold text-foreground mb-6 flex items-center">
-            <i className="fas fa-clipboard-check mr-4 text-accent text-3xl"></i>
-            Research Submission Checklist
+            <span className="mr-4 text-accent text-3xl">📋</span>
+            Entry Submission Checklist
           </h3>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-4">
@@ -116,32 +116,32 @@ export default function Submission() {
           <div className="glass bg-card/60 p-8 rounded-3xl border border-border/50 hover:border-secondary/30 transition-all duration-300 hover:shadow-xl">
             <div className="text-center mb-6">
               <div className="bg-gradient-to-br from-secondary to-primary w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
-                <i className="fas fa-presentation text-2xl text-white"></i>
+                <span className="text-3xl">📊</span>
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-3">Slideshow Presentation</h3>
             </div>
             <p className="text-muted-foreground mb-6 leading-relaxed">Create an engaging slideshow that walks through your quantum research analysis with clear explanations and visual aids.</p>
             <ul className="text-muted-foreground space-y-2">
-              <li className="flex items-center"><i className="fas fa-check text-secondary mr-3"></i>PowerPoint, Google Slides, or PDF format</li>
-              <li className="flex items-center"><i className="fas fa-check text-secondary mr-3"></i>10-20 slides recommended</li>
-              <li className="flex items-center"><i className="fas fa-check text-secondary mr-3"></i>Include visuals and diagrams</li>
-              <li className="flex items-center"><i className="fas fa-check text-secondary mr-3"></i>Tell a clear research story</li>
+              <li className="flex items-center"><span className="text-secondary mr-3">✓</span>PowerPoint, Google Slides, or PDF format</li>
+              <li className="flex items-center"><span className="text-secondary mr-3">✓</span>10-20 slides recommended</li>
+              <li className="flex items-center"><span className="text-secondary mr-3">✓</span>Include visuals and diagrams</li>
+              <li className="flex items-center"><span className="text-secondary mr-3">✓</span>Tell a clear research story</li>
             </ul>
           </div>
           
           <div className="glass bg-card/60 p-8 rounded-3xl border border-border/50 hover:border-accent/30 transition-all duration-300 hover:shadow-xl">
             <div className="text-center mb-6">
               <div className="bg-gradient-to-br from-accent to-quantum w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
-                <i className="fas fa-image text-2xl text-white"></i>
+                <span className="text-3xl">📄</span>
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-3">Research Poster</h3>
             </div>
             <p className="text-muted-foreground mb-6 leading-relaxed">Design a comprehensive poster that summarizes your quantum research findings in an academic conference style.</p>
             <ul className="text-muted-foreground space-y-2">
-              <li className="flex items-center"><i className="fas fa-check text-accent mr-3"></i>Single page, high-resolution format</li>
-              <li className="flex items-center"><i className="fas fa-check text-accent mr-3"></i>Standard academic poster layout</li>
-              <li className="flex items-center"><i className="fas fa-check text-accent mr-3"></i>Include graphs and equations</li>
-              <li className="flex items-center"><i className="fas fa-check text-accent mr-3"></i>Professional scientific design</li>
+              <li className="flex items-center"><span className="text-accent mr-3">✓</span>Single page, high-resolution format</li>
+              <li className="flex items-center"><span className="text-accent mr-3">✓</span>Standard academic poster layout</li>
+              <li className="flex items-center"><span className="text-accent mr-3">✓</span>Include graphs and equations</li>
+              <li className="flex items-center"><span className="text-accent mr-3">✓</span>Professional scientific design</li>
             </ul>
           </div>
         </div>
@@ -150,7 +150,7 @@ export default function Submission() {
         <div className="glass bg-card/60 border border-border/50 rounded-3xl p-12 shadow-2xl">
           <div className="text-center mb-10">
             <div className="w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-xl animate-pulse-quantum">
-              <i className="fas fa-rocket text-3xl text-white"></i>
+              <span className="text-4xl">🚀</span>
             </div>
             <h3 className="text-3xl font-bold text-primary mb-4">Official Submission Portal</h3>
             <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto">
@@ -160,7 +160,7 @@ export default function Submission() {
           
           <div className="glass bg-gradient-to-br from-primary/5 to-accent/5 border border-primary/20 rounded-3xl p-10 text-center">
             <div className="mb-8">
-              <i className="fas fa-upload text-4xl text-primary mb-6"></i>
+              <span className="text-4xl text-primary mb-6 block">📤</span>
               <h4 className="text-2xl font-bold text-foreground mb-6">Ready to Submit?</h4>
               <p className="text-muted-foreground mb-8 leading-relaxed max-w-xl mx-auto">
                 The submission form includes sections for your research presentation, category selection, and academic information.
