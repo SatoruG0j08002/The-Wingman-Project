@@ -1,8 +1,8 @@
-# Teen Quantum Physics Challenge 2024
+# QubitMinded Teen Quantum Physics Challenge 2025
 
 ## Overview
 
-This is a full-stack web application for the Teen Quantum Physics Challenge 2024, a global individual competition platform designed for high school students to explore cutting-edge quantum research through peer-reviewed articles and express their understanding through creative slideshows and posters. The competition is judged by undergraduate and graduate students from quantum computing clubs across universities in the Quantum Coalition network.
+This is a full-stack web application for QubitMinded Teen Quantum Physics Challenge 2025, a Texas pilot program for high school students to explore cutting-edge quantum research through peer-reviewed articles and express their understanding through creative slideshows and posters. The competition is judged by undergraduate and graduate students from quantum computing clubs across universities in the Quantum Coalition network.
 
 The application follows a monorepo structure with a React frontend and Express.js backend, featuring a modern quantum-inspired design with purple/blue gradients, Apple-style glass morphism effects, and smooth animations that reflect the abstract nature of quantum physics.
 
@@ -68,8 +68,13 @@ Competition format: Individual submissions only (no teams), peer-reviewed articl
 - **Criteria**: Research depth, presentation clarity, understanding of quantum concepts, proper citation of peer-reviewed sources
 
 ### Recent Changes (August 2025)
+- Rebranded to "QubitMinded Teen Quantum Physics Challenge 2025"
 - Updated from team-based to individual competition format
 - Redesigned with quantum-inspired Apple aesthetics using purple/blue color scheme
 - Added glass morphism effects and custom quantum wave animations
-- Integrated Quantum Coalition as judging body
+- Integrated Quantum Coalition as judging body with partnership section and external link
+- Implemented comprehensive dark theme with qubit-themed graphics (⟨Q⟩, |0⟩, |1⟩, ⊗)
+- Added Texas pilot program information with 2026 expansion plans
+- Included competition deadlines: September 15, 2025 (submissions open) - November 15, 2025 (deadline) - February 2026 (results)
 - Updated all pages with new design system and competition information
+- Replaced all white icons with quantum symbols and emojis for better visibility

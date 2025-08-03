@@ -48,7 +48,7 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-bold text-primary mb-8">Contact & FAQ</h1>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">Get in touch with our team or find answers to frequently asked questions about the quantum research competition</p>
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">Get in touch with our team or find answers to frequently asked questions about the QubitMinded 2025 competition</p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16">

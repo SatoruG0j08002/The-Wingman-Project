@@ -11,11 +11,57 @@ export default function About() {
           <div className="mt-8 glass bg-accent/10 border border-accent/20 p-6 rounded-3xl max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-accent mb-3 flex items-center justify-center">
               <span className="text-3xl mr-3">🏴󠁵󠁳󠁴󠁸󠁿</span>
-              2024 Texas Pilot Program
+              2025 Texas Pilot Program
             </h2>
             <p className="text-muted-foreground leading-relaxed text-center">
               This year we are piloting QubitMinded in Texas high schools to establish our foundation and refine the competition experience. We're excited to expand nationwide for the 2026 challenge, bringing quantum education opportunities to students across America.
             </p>
+          </div>
+          
+          <div className="mt-8 glass bg-primary/10 border border-primary/20 p-6 rounded-3xl max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h2 className="text-2xl font-bold text-primary mb-4">Partnership with Quantum Coalition</h2>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  This initiative is partnering with the Quantum Coalition for judging and evaluating posters. Our submissions are reviewed by undergraduate and graduate students from quantum computing clubs across universities, providing expert feedback from the next generation of quantum researchers.
+                </p>
+                <a 
+                  href="https://www.quantumcoalition.io/about-us" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-primary hover:text-secondary transition-colors duration-300 font-semibold"
+                >
+                  Learn more about the Quantum Coalition here! →
+                </a>
+              </div>
+              <div className="flex justify-center">
+                <div className="w-80 h-60 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl shadow-lg flex items-center justify-center border border-primary/30">
+                  <div className="text-center">
+                    <div className="text-6xl mb-4 text-primary">⟨QC⟩</div>
+                    <p className="text-muted-foreground font-semibold">Quantum Coalition</p>
+                    <p className="text-muted-foreground text-sm">Partnership Logo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="mt-8 glass bg-quantum/10 border border-quantum/20 p-6 rounded-3xl max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold text-quantum mb-4 text-center">Important Deadlines</h2>
+            <div className="grid md:grid-cols-3 gap-6 text-center">
+              <div>
+                <div className="text-3xl font-bold text-secondary mb-2">September 15, 2025</div>
+                <p className="text-muted-foreground">Accepting Submissions</p>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-accent mb-2">November 15, 2025</div>
+                <p className="text-muted-foreground">Submission Deadline</p>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-primary mb-2">February 2026</div>
+                <p className="text-muted-foreground">Results Announced</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -33,7 +79,7 @@ export default function About() {
                   <li>• Must be enrolled in high school (grades 9-12)</li>
                   <li>• Ages 13-18 at time of submission</li>
                   <li>• <strong className="text-foreground">Individual entries only</strong> - showcase your personal research skills</li>
-                  <li>• <strong className="text-accent">2024 Texas Pilot:</strong> Open to Texas high school students</li>
+                  <li>• <strong className="text-accent">2025 Texas Pilot:</strong> Open to Texas high school students</li>
                   <li>• <strong className="text-primary">2026 Expansion:</strong> Nationwide competition planned</li>
                 </ul>
               </div>
