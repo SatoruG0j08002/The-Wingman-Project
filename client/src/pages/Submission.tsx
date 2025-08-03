@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
 export default function Submission() {
-  const [checkedItems, setCheckedItems] = useState<boolean[]>(new Array(6).fill(false));
+  const [checkedItems, setCheckedItems] = useState<boolean[]>(new Array(8).fill(false));
 
   const handleCheckboxChange = (index: number) => {
     const newCheckedItems = [...checkedItems];
@@ -16,148 +16,206 @@ export default function Submission() {
   };
 
   return (
-    <section className="py-16 bg-white">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">Submit Your Entry</h1>
-          <p className="text-xl text-gray-600">
-            Ready to showcase your quantum physics knowledge? Complete the form below to submit your competition entry.
+    <section className="py-20 bg-background">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h1 className="text-5xl md:text-6xl font-bold text-primary mb-8">Submit Your Research</h1>
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+            Ready to present your quantum physics research? Share your peer-reviewed analysis through creative slideshows or posters.
           </p>
         </div>
 
         {/* Pre-submission Checklist */}
-        <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 mb-8">
-          <h3 className="text-lg font-semibold text-yellow-800 mb-4 flex items-center">
-            <i className="fas fa-exclamation-triangle mr-3"></i>
-            Before You Submit - Checklist
+        <div className="glass bg-gradient-to-br from-accent/5 to-quantum/5 border border-accent/20 p-10 mb-12 rounded-3xl">
+          <h3 className="text-2xl font-bold text-foreground mb-6 flex items-center">
+            <i className="fas fa-clipboard-check mr-4 text-accent text-3xl"></i>
+            Research Submission Checklist
           </h3>
-          <div className="grid md:grid-cols-2 gap-4">
-            <div className="space-y-2">
-              <label className="flex items-center text-yellow-700 cursor-pointer">
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="space-y-4">
+              <label className="flex items-start text-foreground cursor-pointer group" data-testid="checkbox-quantum-concepts">
                 <input
                   type="checkbox"
-                  className="mr-3 text-yellow-600"
+                  className="mr-4 mt-1 text-accent scale-125"
                   checked={checkedItems[0]}
                   onChange={() => handleCheckboxChange(0)}
                 />
-                Your project addresses quantum physics concepts
+                <span className="group-hover:text-primary transition-colors">Your presentation analyzes peer-reviewed quantum physics articles</span>
               </label>
-              <label className="flex items-center text-yellow-700 cursor-pointer">
+              <label className="flex items-start text-foreground cursor-pointer group" data-testid="checkbox-citations">
                 <input
                   type="checkbox"
-                  className="mr-3 text-yellow-600"
+                  className="mr-4 mt-1 text-accent scale-125"
                   checked={checkedItems[1]}
                   onChange={() => handleCheckboxChange(1)}
                 />
-                All sources are properly cited
+                <span className="group-hover:text-primary transition-colors">All peer-reviewed sources are properly cited</span>
               </label>
-              <label className="flex items-center text-yellow-700 cursor-pointer">
+              <label className="flex items-start text-foreground cursor-pointer group" data-testid="checkbox-original">
                 <input
                   type="checkbox"
-                  className="mr-3 text-yellow-600"
+                  className="mr-4 mt-1 text-accent scale-125"
                   checked={checkedItems[2]}
                   onChange={() => handleCheckboxChange(2)}
                 />
-                Work is original and completed during competition period
+                <span className="group-hover:text-primary transition-colors">Analysis and presentation are your original work</span>
               </label>
-            </div>
-            <div className="space-y-2">
-              <label className="flex items-center text-yellow-700 cursor-pointer">
+              <label className="flex items-start text-foreground cursor-pointer group" data-testid="checkbox-category">
                 <input
                   type="checkbox"
-                  className="mr-3 text-yellow-600"
+                  className="mr-4 mt-1 text-accent scale-125"
                   checked={checkedItems[3]}
                   onChange={() => handleCheckboxChange(3)}
                 />
-                Report is 5-15 pages (or equivalent presentation)
+                <span className="group-hover:text-primary transition-colors">You've selected either Quantum Computation or Quantum Physics category</span>
               </label>
-              <label className="flex items-center text-yellow-700 cursor-pointer">
+            </div>
+            <div className="space-y-4">
+              <label className="flex items-start text-foreground cursor-pointer group" data-testid="checkbox-format">
                 <input
                   type="checkbox"
-                  className="mr-3 text-yellow-600"
+                  className="mr-4 mt-1 text-accent scale-125"
                   checked={checkedItems[4]}
                   onChange={() => handleCheckboxChange(4)}
                 />
-                Team has 3 members or fewer
+                <span className="group-hover:text-primary transition-colors">Submission is either a slideshow OR poster presentation</span>
               </label>
-              <label className="flex items-center text-yellow-700 cursor-pointer">
+              <label className="flex items-start text-foreground cursor-pointer group" data-testid="checkbox-individual">
                 <input
                   type="checkbox"
-                  className="mr-3 text-yellow-600"
+                  className="mr-4 mt-1 text-accent scale-125"
                   checked={checkedItems[5]}
                   onChange={() => handleCheckboxChange(5)}
                 />
-                All team members meet age requirements
+                <span className="group-hover:text-primary transition-colors">This is an individual submission (no teams)</span>
+              </label>
+              <label className="flex items-start text-foreground cursor-pointer group" data-testid="checkbox-age">
+                <input
+                  type="checkbox"
+                  className="mr-4 mt-1 text-accent scale-125"
+                  checked={checkedItems[6]}
+                  onChange={() => handleCheckboxChange(6)}
+                />
+                <span className="group-hover:text-primary transition-colors">You meet age requirements (13-18, high school student)</span>
+              </label>
+              <label className="flex items-start text-foreground cursor-pointer group" data-testid="checkbox-understanding">
+                <input
+                  type="checkbox"
+                  className="mr-4 mt-1 text-accent scale-125"
+                  checked={checkedItems[7]}
+                  onChange={() => handleCheckboxChange(7)}
+                />
+                <span className="group-hover:text-primary transition-colors">Your presentation demonstrates deep understanding of quantum concepts</span>
               </label>
             </div>
           </div>
         </div>
 
-        {/* Submission Categories */}
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
-          <div className="bg-blue-50 p-6 rounded-lg border">
-            <h3 className="text-lg font-semibold text-primary mb-3">Individual Submission</h3>
-            <p className="text-gray-600 mb-4">Submit your project as a solo researcher and showcase your individual talents.</p>
-            <ul className="text-sm text-gray-600 space-y-1">
-              <li>• Single author credit</li>
-              <li>• Faster submission process</li>
-              <li>• Individual recognition</li>
+        {/* Submission Format Options */}
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="glass bg-card/60 p-8 rounded-3xl border border-border/50 hover:border-secondary/30 transition-all duration-300 hover:shadow-xl">
+            <div className="text-center mb-6">
+              <div className="bg-gradient-to-br from-secondary to-primary w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                <i className="fas fa-presentation text-2xl text-white"></i>
+              </div>
+              <h3 className="text-2xl font-bold text-foreground mb-3">Slideshow Presentation</h3>
+            </div>
+            <p className="text-muted-foreground mb-6 leading-relaxed">Create an engaging slideshow that walks through your quantum research analysis with clear explanations and visual aids.</p>
+            <ul className="text-muted-foreground space-y-2">
+              <li className="flex items-center"><i className="fas fa-check text-secondary mr-3"></i>PowerPoint, Google Slides, or PDF format</li>
+              <li className="flex items-center"><i className="fas fa-check text-secondary mr-3"></i>10-20 slides recommended</li>
+              <li className="flex items-center"><i className="fas fa-check text-secondary mr-3"></i>Include visuals and diagrams</li>
+              <li className="flex items-center"><i className="fas fa-check text-secondary mr-3"></i>Tell a clear research story</li>
             </ul>
           </div>
-          <div className="bg-purple-50 p-6 rounded-lg border">
-            <h3 className="text-lg font-semibold text-accent mb-3">Team Submission</h3>
-            <p className="text-gray-600 mb-4">Collaborate with up to 2 other students for a comprehensive project.</p>
-            <ul className="text-sm text-gray-600 space-y-1">
-              <li>• Up to 3 team members</li>
-              <li>• Shared recognition and awards</li>
-              <li>• Collaborative research experience</li>
+          
+          <div className="glass bg-card/60 p-8 rounded-3xl border border-border/50 hover:border-accent/30 transition-all duration-300 hover:shadow-xl">
+            <div className="text-center mb-6">
+              <div className="bg-gradient-to-br from-accent to-quantum w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                <i className="fas fa-image text-2xl text-white"></i>
+              </div>
+              <h3 className="text-2xl font-bold text-foreground mb-3">Research Poster</h3>
+            </div>
+            <p className="text-muted-foreground mb-6 leading-relaxed">Design a comprehensive poster that summarizes your quantum research findings in an academic conference style.</p>
+            <ul className="text-muted-foreground space-y-2">
+              <li className="flex items-center"><i className="fas fa-check text-accent mr-3"></i>Single page, high-resolution format</li>
+              <li className="flex items-center"><i className="fas fa-check text-accent mr-3"></i>Standard academic poster layout</li>
+              <li className="flex items-center"><i className="fas fa-check text-accent mr-3"></i>Include graphs and equations</li>
+              <li className="flex items-center"><i className="fas fa-check text-accent mr-3"></i>Professional scientific design</li>
             </ul>
           </div>
         </div>
 
         {/* Google Form Integration */}
-        <div className="bg-white border-2 border-gray-200 rounded-xl p-8 shadow-lg">
-          <div className="text-center mb-6">
-            <i className="fas fa-file-upload text-4xl text-secondary mb-4"></i>
-            <h3 className="text-2xl font-semibold text-primary mb-2">Official Submission Form</h3>
-            <p className="text-gray-600">Click the button below to access the Google Form for your competition submission</p>
+        <div className="glass bg-card/60 border border-border/50 rounded-3xl p-12 shadow-2xl">
+          <div className="text-center mb-10">
+            <div className="w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-xl animate-pulse-quantum">
+              <i className="fas fa-rocket text-3xl text-white"></i>
+            </div>
+            <h3 className="text-3xl font-bold text-primary mb-4">Official Submission Portal</h3>
+            <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto">
+              Submit your quantum research presentation through our secure Google Form portal
+            </p>
           </div>
           
-          <div className="bg-gray-50 border-2 border-dashed border-gray-300 rounded-lg p-12 text-center">
-            <i className="fas fa-external-link-alt text-3xl text-gray-400 mb-4"></i>
-            <h4 className="text-lg font-semibold text-gray-600 mb-4">Google Form Integration</h4>
-            <p className="text-gray-500 mb-6">
-              The official submission form will allow students to:
-            </p>
-            <ul className="text-left text-gray-500 max-w-md mx-auto mb-6 space-y-2">
-              <li>• Upload their project files (PDF, presentations, etc.)</li>
-              <li>• Provide team member information</li>
-              <li>• Select their project category</li>
-              <li>• Submit contact and school details</li>
-              <li>• Agree to competition terms</li>
-            </ul>
+          <div className="glass bg-gradient-to-br from-primary/5 to-accent/5 border border-primary/20 rounded-3xl p-10 text-center">
+            <div className="mb-8">
+              <i className="fas fa-upload text-4xl text-primary mb-6"></i>
+              <h4 className="text-2xl font-bold text-foreground mb-6">Ready to Submit?</h4>
+              <p className="text-muted-foreground mb-8 leading-relaxed max-w-xl mx-auto">
+                The submission form includes sections for your research presentation, category selection, and academic information.
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-6 mb-10">
+              <div className="text-left">
+                <h5 className="font-bold text-foreground mb-3">What You'll Upload:</h5>
+                <ul className="text-muted-foreground space-y-2">
+                  <li className="flex items-center"><i className="fas fa-check text-secondary mr-3"></i>Slideshow or poster file (PDF/PowerPoint)</li>
+                  <li className="flex items-center"><i className="fas fa-check text-secondary mr-3"></i>List of peer-reviewed sources analyzed</li>
+                  <li className="flex items-center"><i className="fas fa-check text-secondary mr-3"></i>Brief research summary</li>
+                </ul>
+              </div>
+              <div className="text-left">
+                <h5 className="font-bold text-foreground mb-3">Required Information:</h5>
+                <ul className="text-muted-foreground space-y-2">
+                  <li className="flex items-center"><i className="fas fa-check text-accent mr-3"></i>Category selection (Computation/Physics)</li>
+                  <li className="flex items-center"><i className="fas fa-check text-accent mr-3"></i>Student and school contact details</li>
+                  <li className="flex items-center"><i className="fas fa-check text-accent mr-3"></i>Competition terms agreement</li>
+                </ul>
+              </div>
+            </div>
+            
             <Button
               onClick={openGoogleForm}
-              className="bg-secondary hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+              className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white px-12 py-4 rounded-2xl font-bold text-lg transition-all duration-300 shadow-xl hover:shadow-2xl animate-glow"
+              data-testid="button-open-form"
             >
+              <i className="fas fa-external-link-alt mr-3"></i>
               Open Submission Form
             </Button>
           </div>
         </div>
 
         {/* Support Information */}
-        <div className="mt-12 bg-gray-50 p-6 rounded-xl">
-          <h3 className="text-lg font-semibold text-primary mb-4">Need Help?</h3>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div>
-              <h4 className="font-medium mb-2">Technical Support</h4>
-              <p className="text-gray-600 text-sm mb-2">Having trouble with the submission form?</p>
-              <p className="text-secondary font-semibold">tech-support@quantumchallenge.org</p>
+        <div className="mt-16 glass bg-card/60 p-10 rounded-3xl border border-border/50">
+          <h3 className="text-2xl font-bold text-primary mb-8 text-center">Need Assistance?</h3>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-secondary to-primary rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                <i className="fas fa-laptop-code text-2xl text-white"></i>
+              </div>
+              <h4 className="font-bold text-lg mb-3 text-foreground">Technical Support</h4>
+              <p className="text-muted-foreground mb-4 leading-relaxed">Having trouble with the submission form or file uploads?</p>
+              <p className="text-secondary font-bold text-lg">tech-support@quantumchallenge.org</p>
             </div>
-            <div>
-              <h4 className="font-medium mb-2">Academic Questions</h4>
-              <p className="text-gray-600 text-sm mb-2">Questions about project requirements?</p>
-              <p className="text-secondary font-semibold">academic@quantumchallenge.org</p>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-accent to-quantum rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                <i className="fas fa-graduation-cap text-2xl text-white"></i>
+              </div>
+              <h4 className="font-bold text-lg mb-3 text-foreground">Academic Questions</h4>
+              <p className="text-muted-foreground mb-4 leading-relaxed">Questions about research requirements or categories?</p>
+              <p className="text-accent font-bold text-lg">academic@quantumchallenge.org</p>
             </div>
           </div>
         </div>

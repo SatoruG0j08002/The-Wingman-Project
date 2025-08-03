@@ -8,19 +8,27 @@ interface FAQItem {
 const faqData: FAQItem[] = [
   {
     question: "Do I need prior experience in quantum physics?",
-    answer: "No prior experience is required! We encourage students from all backgrounds to participate. Resources and guidance materials are provided to help you get started."
+    answer: "No prior experience is required! The competition is designed to encourage students to explore quantum concepts through peer-reviewed research. We provide guidance on how to read and analyze scientific papers."
   },
   {
     question: "Can I work with a mentor?",
-    answer: "Yes! We encourage students to work with teachers, professors, or other mentors. However, the work must be primarily yours, and you must acknowledge all assistance received."
+    answer: "Yes! We encourage students to work with teachers, professors, or mentors. However, the analysis and presentation must be your original work, and you must acknowledge all assistance received."
   },
   {
-    question: "What file formats are accepted?",
-    answer: "We accept PDF documents, PowerPoint presentations, and video files (MP4). Maximum file size is 50MB. For larger projects, please provide a link to cloud storage."
+    question: "What presentation formats are accepted?",
+    answer: "We accept slideshows (PowerPoint, Google Slides, PDF) or research posters. Slideshows should be 10-20 slides, and posters should follow standard academic conference formats."
   },
   {
-    question: "How are projects evaluated?",
-    answer: "Projects are evaluated by a panel of quantum physics experts based on creativity, scientific accuracy, clarity of presentation, and depth of understanding demonstrated."
+    question: "Who judges the submissions?",
+    answer: "Submissions are evaluated by undergraduate and graduate students from quantum computing clubs across universities in the Quantum Coalition network, providing expert peer review from the next generation of quantum researchers."
+  },
+  {
+    question: "Can teams participate?",
+    answer: "No, this competition focuses on individual research skills. We want to see each student's personal ability to analyze complex quantum physics literature and communicate their understanding."
+  },
+  {
+    question: "What are the two competition categories?",
+    answer: "Quantum Computation (covering circuits, qubits, algorithms, cryptography) and Quantum Physics (covering hardware design, path integrals, QED, superposition, entanglement). Choose the category that matches your research focus."
   },
   {
     question: "Are international students eligible?",
@@ -36,68 +44,72 @@ export default function Contact() {
   };
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">Contact & FAQ</h1>
-          <p className="text-xl text-gray-600">Get in touch with our team or find answers to frequently asked questions</p>
+        <div className="text-center mb-16">
+          <h1 className="text-5xl md:text-6xl font-bold text-primary mb-8">Contact & FAQ</h1>
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">Get in touch with our team or find answers to frequently asked questions about the quantum research competition</p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-16">
           {/* Contact Information */}
           <div>
-            <h2 className="text-2xl font-bold text-primary mb-6">Get In Touch</h2>
-            <div className="space-y-6">
-              <div className="flex items-start">
-                <div className="bg-secondary text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
-                  <i className="fas fa-envelope"></i>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg">Email Support</h3>
-                  <p className="text-gray-600">info@quantumchallenge.org</p>
-                  <p className="text-sm text-gray-500">Response within 24 hours</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start">
-                <div className="bg-accent text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
-                  <i className="fas fa-phone"></i>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg">Phone Support</h3>
-                  <p className="text-gray-600">+1 (555) 123-4567</p>
-                  <p className="text-sm text-gray-500">Mon-Fri, 9AM-5PM EST</p>
+            <h2 className="text-3xl font-bold text-primary mb-8">Get In Touch</h2>
+            <div className="space-y-8">
+              <div className="glass bg-card/60 p-6 rounded-3xl border border-border/50 hover:border-secondary/30 transition-all duration-300">
+                <div className="flex items-start">
+                  <div className="bg-gradient-to-br from-secondary to-primary text-white w-16 h-16 rounded-2xl flex items-center justify-center mr-6 shadow-lg">
+                    <i className="fas fa-envelope text-xl"></i>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-xl text-foreground mb-2">Email Support</h3>
+                    <p className="text-muted-foreground mb-1">info@quantumchallenge.org</p>
+                    <p className="text-sm text-muted-foreground">Response within 24 hours</p>
+                  </div>
                 </div>
               </div>
               
-              <div className="flex items-start">
-                <div className="bg-quantum text-white w-12 h-12 rounded-full flex items-center justify-center mr-4">
-                  <i className="fas fa-map-marker-alt"></i>
+              <div className="glass bg-card/60 p-6 rounded-3xl border border-border/50 hover:border-accent/30 transition-all duration-300">
+                <div className="flex items-start">
+                  <div className="bg-gradient-to-br from-accent to-quantum text-white w-16 h-16 rounded-2xl flex items-center justify-center mr-6 shadow-lg">
+                    <i className="fas fa-university text-xl"></i>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-xl text-foreground mb-2">Quantum Coalition</h3>
+                    <p className="text-muted-foreground mb-1">University partners and judges</p>
+                    <p className="text-sm text-muted-foreground">Undergraduate & graduate quantum clubs</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="font-semibold text-lg">Office Address</h3>
-                  <p className="text-gray-600">
-                    123 Science Drive<br />
-                    University City, UC 12345
-                  </p>
+              </div>
+              
+              <div className="glass bg-card/60 p-6 rounded-3xl border border-border/50 hover:border-quantum/30 transition-all duration-300">
+                <div className="flex items-start">
+                  <div className="bg-gradient-to-br from-quantum to-primary text-white w-16 h-16 rounded-2xl flex items-center justify-center mr-6 shadow-lg">
+                    <i className="fas fa-phone text-xl"></i>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-xl text-foreground mb-2">Phone Support</h3>
+                    <p className="text-muted-foreground mb-1">+1 (555) 123-4567</p>
+                    <p className="text-sm text-muted-foreground">Mon-Fri, 9AM-5PM EST</p>
+                  </div>
                 </div>
               </div>
             </div>
             
-            <div className="mt-8 p-6 bg-blue-50 rounded-lg">
-              <h3 className="font-semibold text-lg mb-3">Follow Our Updates</h3>
-              <div className="flex space-x-4">
-                <a href="#" className="text-secondary hover:text-blue-800 text-2xl">
-                  <i className="fab fa-twitter"></i>
+            <div className="mt-10 glass bg-gradient-to-br from-primary/5 to-secondary/5 p-8 rounded-3xl border border-primary/20">
+              <h3 className="font-bold text-xl text-foreground mb-6">Follow Our Updates</h3>
+              <div className="flex space-x-6">
+                <a href="#" className="w-12 h-12 bg-secondary hover:bg-secondary/80 text-white rounded-2xl flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl">
+                  <i className="fab fa-twitter text-lg"></i>
                 </a>
-                <a href="#" className="text-secondary hover:text-blue-800 text-2xl">
-                  <i className="fab fa-facebook"></i>
+                <a href="#" className="w-12 h-12 bg-secondary hover:bg-secondary/80 text-white rounded-2xl flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl">
+                  <i className="fab fa-facebook text-lg"></i>
                 </a>
-                <a href="#" className="text-secondary hover:text-blue-800 text-2xl">
-                  <i className="fab fa-instagram"></i>
+                <a href="#" className="w-12 h-12 bg-secondary hover:bg-secondary/80 text-white rounded-2xl flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl">
+                  <i className="fab fa-instagram text-lg"></i>
                 </a>
-                <a href="#" className="text-secondary hover:text-blue-800 text-2xl">
-                  <i className="fab fa-youtube"></i>
+                <a href="#" className="w-12 h-12 bg-secondary hover:bg-secondary/80 text-white rounded-2xl flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl">
+                  <i className="fab fa-youtube text-lg"></i>
                 </a>
               </div>
             </div>
@@ -105,21 +117,22 @@ export default function Contact() {
 
           {/* FAQ Section */}
           <div>
-            <h2 className="text-2xl font-bold text-primary mb-6">Frequently Asked Questions</h2>
-            <div className="space-y-4">
+            <h2 className="text-3xl font-bold text-primary mb-8">Frequently Asked Questions</h2>
+            <div className="space-y-6">
               {faqData.map((faq, index) => (
-                <div key={index} className="border border-gray-200 rounded-lg">
+                <div key={index} className="glass bg-card/60 border border-border/50 rounded-3xl overflow-hidden hover:border-primary/30 transition-all duration-300">
                   <button
                     onClick={() => toggleFAQ(index)}
-                    className="w-full text-left p-4 hover:bg-gray-50 transition-colors"
+                    className="w-full text-left p-6 hover:bg-primary/5 transition-all duration-300"
+                    data-testid={`faq-question-${index}`}
                   >
                     <div className="flex justify-between items-center">
-                      <span className="font-semibold">{faq.question}</span>
-                      <i className={`fas fa-chevron-down transform transition-transform ${openFAQ === index ? 'rotate-180' : ''}`}></i>
+                      <span className="font-bold text-foreground text-lg pr-4">{faq.question}</span>
+                      <i className={`fas fa-chevron-down transform transition-transform duration-300 text-primary ${openFAQ === index ? 'rotate-180' : ''}`}></i>
                     </div>
                   </button>
                   {openFAQ === index && (
-                    <div className="p-4 pt-0 text-gray-600">
+                    <div className="px-6 pb-6 text-muted-foreground leading-relaxed bg-primary/5">
                       {faq.answer}
                     </div>
                   )}
