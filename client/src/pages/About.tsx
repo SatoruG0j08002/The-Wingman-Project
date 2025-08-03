@@ -35,12 +35,12 @@ export default function About() {
                 </a>
               </div>
               <div className="flex justify-center">
-                <div className="w-80 h-60 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl shadow-lg flex items-center justify-center border border-primary/30">
-                  <div className="text-center">
-                    <div className="text-6xl mb-4 text-primary">⟨QC⟩</div>
-                    <p className="text-muted-foreground font-semibold">Quantum Coalition</p>
-                    <p className="text-muted-foreground text-sm">Partnership Logo</p>
-                  </div>
+                <div className="p-6 glass bg-white/10 rounded-2xl shadow-lg border border-primary/20">
+                  <img 
+                    src="/src/assets/quantum_coalition_logo.png" 
+                    alt="Quantum Coalition Logo" 
+                    className="w-64 h-auto rounded-lg"
+                  />
                 </div>
               </div>
             </div>
