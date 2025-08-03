@@ -107,7 +107,7 @@ export default function Home() {
                   <div>
                     <h3 className="font-bold text-2xl text-foreground mb-3">Quantum Computation</h3>
                     <p className="text-muted-foreground mb-4 leading-relaxed">
-                      Explore the various concepts and real-world applications of quantum computing
+                      Explore the various concepts and real-world applications of quantum computing.
                     </p>
                     <p className="text-sm text-muted-foreground/80 mb-2 font-medium">Example Topics:</p>
                     <div className="flex flex-wrap gap-2">
@@ -128,7 +128,7 @@ export default function Home() {
                   <div>
                     <h3 className="font-bold text-2xl text-foreground mb-3">Quantum Physics</h3>
                     <p className="text-muted-foreground mb-4 leading-relaxed">
-                      Investigate the core principles of quantum physics, and how it revolutionized our model of the universe, as well as information processing
+                      Investigate the core principles of quantum physics, and how it revolutionized our model of the universe, as well as information processing.
                     </p>
                     <p className="text-sm text-muted-foreground/80 mb-2 font-medium">Example Topics:</p>
                     <div className="flex flex-wrap gap-2">
