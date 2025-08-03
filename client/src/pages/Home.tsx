@@ -107,8 +107,9 @@ export default function Home() {
                   <div>
                     <h3 className="font-bold text-2xl text-foreground mb-3">Quantum Computation</h3>
                     <p className="text-muted-foreground mb-4 leading-relaxed">
-                      Explore quantum circuits, qubits, algorithms, cryptography, and computational applications
+                      Explore the various concepts and real-world applications of quantum computing
                     </p>
+                    <p className="text-sm text-muted-foreground/80 mb-2 font-medium">Example Topics:</p>
                     <div className="flex flex-wrap gap-2">
                       <span className="px-3 py-1 text-xs bg-secondary/10 text-secondary rounded-full border border-secondary/20">Quantum Circuits</span>
                       <span className="px-3 py-1 text-xs bg-secondary/10 text-secondary rounded-full border border-secondary/20">Qubits</span>
@@ -127,8 +128,9 @@ export default function Home() {
                   <div>
                     <h3 className="font-bold text-2xl text-foreground mb-3">Quantum Physics</h3>
                     <p className="text-muted-foreground mb-4 leading-relaxed">
-                      Investigate quantum hardware design, Feynman's path integral, QED, superposition, and entanglement
+                      Investigate the core principles of quantum physics, and how it revolutionized our model of the universe, as well as information processing
                     </p>
+                    <p className="text-sm text-muted-foreground/80 mb-2 font-medium">Example Topics:</p>
                     <div className="flex flex-wrap gap-2">
                       <span className="px-3 py-1 text-xs bg-accent/10 text-accent rounded-full border border-accent/20">Hardware Design</span>
                       <span className="px-3 py-1 text-xs bg-accent/10 text-accent rounded-full border border-accent/20">Path Integral</span>

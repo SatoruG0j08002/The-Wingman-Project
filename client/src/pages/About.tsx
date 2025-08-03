@@ -142,11 +142,15 @@ export default function About() {
                 <div className="space-y-6">
                   <div className="p-4 rounded-2xl bg-background/50 border border-secondary/20">
                     <h4 className="font-bold text-secondary text-lg mb-2">Quantum Computation</h4>
-                    <p className="text-muted-foreground leading-relaxed">Explore quantum circuits, qubits, algorithms, cryptography, and computational applications through peer-reviewed research</p>
+                    <p className="text-muted-foreground leading-relaxed">Explore the various concepts and real-world applications of quantum computing through peer-reviewed research</p>
+                    <p className="text-xs text-muted-foreground/70 mt-2 font-medium">Example Topics:</p>
+                    <p className="text-xs text-muted-foreground/70">Quantum circuits, qubits, algorithms, cryptography, and computational applications</p>
                   </div>
                   <div className="p-4 rounded-2xl bg-background/50 border border-accent/20">
                     <h4 className="font-bold text-accent text-lg mb-2">Quantum Physics</h4>
-                    <p className="text-muted-foreground leading-relaxed">Investigate quantum hardware design, Feynman's path integral, QED, superposition, and entanglement concepts</p>
+                    <p className="text-muted-foreground leading-relaxed">Investigate the core principles of quantum physics, and how it revolutionized our model of the universe, as well as information processing</p>
+                    <p className="text-xs text-muted-foreground/70 mt-2 font-medium">Example Topics:</p>
+                    <p className="text-xs text-muted-foreground/70">Hardware design, Feynman's path integral, QED, superposition, and entanglement concepts</p>
                   </div>
                 </div>
               </div>
