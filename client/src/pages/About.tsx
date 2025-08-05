@@ -23,7 +23,7 @@ export default function About() {
               <div>
                 <h2 className="text-2xl font-bold text-primary mb-4">Partnership with Quantum Coalition</h2>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  This initiative is partnering with the Quantum Coalition for judging and evaluating posters. Our submissions are reviewed by undergraduate and graduate students from quantum computing clubs across universities, providing expert feedback from the next generation of quantum researchers.
+                  This initiative is partnering with the Quantum Coalition for judging and evaluating posters. Our submissions are reviewed by undergraduate and graduate students from quantum computing clubs across affiliated universities, providing expert feedback from the next generation of quantum researchers.
                 </p>
                 <a 
                   href="https://www.quantumcoalition.io/about-us" 
@@ -111,7 +111,6 @@ export default function About() {
               </div>
             </div>
           </div>
-          
           <div>
             <h2 className="text-3xl font-bold text-primary mb-8">Guidelines & Timeline</h2>
             <div className="space-y-8">
@@ -120,51 +119,22 @@ export default function About() {
                 <div className="space-y-4">
                   <div className="flex justify-between items-center p-3 rounded-xl bg-background/50">
                     <span className="text-foreground font-medium">Registration Opens</span>
-                    <span className="font-bold text-secondary">January 15, 2024</span>
+                    <span className="font-bold text-secondary">September 15, 2025</span>
                   </div>
                   <div className="flex justify-between items-center p-3 rounded-xl bg-background/50">
-                    <span className="text-foreground font-medium">Early Registration Ends</span>
-                    <span className="font-bold text-secondary">February 15, 2024</span>
+                    <span className="text-foreground font-medium">Registration Deadline</span>
+                    <span className="font-bold text-secondary">September 30, 2025</span>
                   </div>
                   <div className="flex justify-between items-center p-3 rounded-xl bg-background/50">
                     <span className="text-foreground font-medium">Final Submission Deadline</span>
-                    <span className="font-bold text-destructive">March 30, 2024</span>
+                    <span className="font-bold text-destructive">November 20, 2025</span>
                   </div>
                   <div className="flex justify-between items-center p-3 rounded-xl bg-background/50">
                     <span className="text-foreground font-medium">Results Announced</span>
-                    <span className="font-bold text-accent">May 15, 2024</span>
+                    <span className="font-bold text-accent">February, 2025 (Exact Date TBD)</span>
                   </div>
                 </div>
               </div>
-              
-              <div className="glass bg-gradient-to-br from-accent/5 to-quantum/5 p-8 rounded-3xl border border-accent/20">
-                <h3 className="font-bold text-xl mb-6 text-foreground">Competition Categories</h3>
-                <div className="space-y-6">
-                  <div className="p-4 rounded-2xl bg-background/50 border border-secondary/20">
-                    <h4 className="font-bold text-secondary text-lg mb-2">Quantum Computation</h4>
-                    <p className="text-muted-foreground leading-relaxed">Explore the various concepts and real-world applications of quantum computing through peer-reviewed research.</p>
-                    <p className="text-xs text-muted-foreground/70 mt-2 font-medium">Example Topics:</p>
-                    <p className="text-xs text-muted-foreground/70">Quantum circuits, qubits, algorithms, cryptography, and computational applications</p>
-                  </div>
-                  <div className="p-4 rounded-2xl bg-background/50 border border-accent/20">
-                    <h4 className="font-bold text-accent text-lg mb-2">Quantum Physics</h4>
-                    <p className="text-muted-foreground leading-relaxed">Investigate the core principles of quantum physics, and how it revolutionized our model of the universe, as well as information processing.</p>
-                    <p className="text-xs text-muted-foreground/70 mt-2 font-medium">Example Topics:</p>
-                    <p className="text-xs text-muted-foreground/70">Hardware design, Feynman's path integral, QED, superposition, and entanglement concepts</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="glass bg-gradient-to-br from-quantum/5 to-primary/5 p-8 rounded-3xl border border-quantum/20">
-                <h3 className="font-bold text-xl mb-4 text-foreground">Judged by Quantum Coalition</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Your presentations will be evaluated by undergraduate and graduate students from quantum computing clubs across universities in the Quantum Coalition network, providing expert feedback from the next generation of quantum researchers.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Awards Section */}
         <div className="relative bg-gradient-to-br from-primary via-secondary to-accent text-white p-12 rounded-3xl overflow-hidden">
           {/* Background pattern */}
