@@ -135,6 +135,10 @@ export default function About() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+
         {/* Awards Section */}
         <div className="relative bg-gradient-to-br from-primary via-secondary to-accent text-white p-12 rounded-3xl overflow-hidden">
           {/* Background pattern */}
