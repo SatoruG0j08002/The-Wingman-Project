@@ -27,7 +27,7 @@ export default function Submission() {
         <div className="glass bg-gradient-to-br from-accent/5 to-quantum/5 border border-accent/20 p-10 mb-12 rounded-3xl">
           <h3 className="text-2xl font-bold text-foreground mb-6 flex items-center">
             <span className="mr-4 text-accent text-3xl">📋</span>
-            Entry Submission Checklist
+            Tutor Qualification Checklist
           </h3>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-4">
@@ -38,34 +38,7 @@ export default function Submission() {
                   checked={checkedItems[0]}
                   onChange={() => handleCheckboxChange(0)}
                 />
-                <span className="group-hover:text-primary transition-colors">Your presentation analyzes peer-reviewed quantum physics articles</span>
-              </label>
-              <label className="flex items-start text-foreground cursor-pointer group" data-testid="checkbox-citations">
-                <input
-                  type="checkbox"
-                  className="mr-4 mt-1 text-accent scale-125"
-                  checked={checkedItems[1]}
-                  onChange={() => handleCheckboxChange(1)}
-                />
-                <span className="group-hover:text-primary transition-colors">All peer-reviewed sources are properly cited</span>
-              </label>
-              <label className="flex items-start text-foreground cursor-pointer group" data-testid="checkbox-original">
-                <input
-                  type="checkbox"
-                  className="mr-4 mt-1 text-accent scale-125"
-                  checked={checkedItems[2]}
-                  onChange={() => handleCheckboxChange(2)}
-                />
-                <span className="group-hover:text-primary transition-colors">Analysis and presentation are your original work</span>
-              </label>
-              <label className="flex items-start text-foreground cursor-pointer group" data-testid="checkbox-category">
-                <input
-                  type="checkbox"
-                  className="mr-4 mt-1 text-accent scale-125"
-                  checked={checkedItems[3]}
-                  onChange={() => handleCheckboxChange(3)}
-                />
-                <span className="group-hover:text-primary transition-colors">You've selected either Quantum Computation or Quantum Physics category</span>
+                <span className="group-hover:text-primary transition-colors">You are proficient at the subject(s) you want to teach (must have an A in that class)</span>
               </label>
             </div>
             <div className="space-y-4">
@@ -76,34 +49,7 @@ export default function Submission() {
                   checked={checkedItems[4]}
                   onChange={() => handleCheckboxChange(4)}
                 />
-                <span className="group-hover:text-primary transition-colors">Submission is either a slideshow OR poster presentation</span>
-              </label>
-              <label className="flex items-start text-foreground cursor-pointer group" data-testid="checkbox-individual">
-                <input
-                  type="checkbox"
-                  className="mr-4 mt-1 text-accent scale-125"
-                  checked={checkedItems[5]}
-                  onChange={() => handleCheckboxChange(5)}
-                />
-                <span className="group-hover:text-primary transition-colors">This is an individual submission (no teams)</span>
-              </label>
-              <label className="flex items-start text-foreground cursor-pointer group" data-testid="checkbox-age">
-                <input
-                  type="checkbox"
-                  className="mr-4 mt-1 text-accent scale-125"
-                  checked={checkedItems[6]}
-                  onChange={() => handleCheckboxChange(6)}
-                />
-                <span className="group-hover:text-primary transition-colors">You meet age requirements (13-18, high school student)</span>
-              </label>
-              <label className="flex items-start text-foreground cursor-pointer group" data-testid="checkbox-understanding">
-                <input
-                  type="checkbox"
-                  className="mr-4 mt-1 text-accent scale-125"
-                  checked={checkedItems[7]}
-                  onChange={() => handleCheckboxChange(7)}
-                />
-                <span className="group-hover:text-primary transition-colors">Your presentation demonstrates deep understanding of quantum concepts</span>
+                <span className="group-hover:text-primary transition-colors">You have applied to tutor a subject that you have ALREADY taken in the past; you cannot tutor for a subject you are currently taking.</span>
               </label>
             </div>
           </div>

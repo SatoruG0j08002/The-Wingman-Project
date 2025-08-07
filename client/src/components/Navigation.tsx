@@ -60,9 +60,7 @@ export default function Navigation() {
                   ? "text-primary font-semibold bg-primary/10"
                   : "text-foreground/80 hover:text-primary hover:bg-primary/5"
               }`}
-            >
-              Submit
-            </Link>
+            >Sign Up</Link>
             <Link
               href="/contact"
               className={`px-4 py-2 text-sm font-medium transition-all duration-300 rounded-full ${
