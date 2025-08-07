@@ -19,30 +19,11 @@ export default function About() {
           </div>
           
           <div className="mt-8 glass bg-primary/10 border border-primary/20 p-6 rounded-3xl max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div>
-                <h2 className="text-2xl font-bold text-primary mb-4">Partnership with Quantum Coalition</h2>
-                <p className="text-muted-foreground leading-relaxed mb-4">
-                  This initiative is partnering with the Quantum Coalition for judging and evaluating posters. Our submissions are reviewed by undergraduate and graduate students from quantum computing clubs across affiliated universities, providing expert feedback from the next generation of quantum researchers.
-                </p>
-                <a 
-                  href="https://www.quantumcoalition.io/about-us" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-primary hover:text-secondary transition-colors duration-300 font-semibold"
-                >
-                  Learn more about the Quantum Coalition here! →
-                </a>
-              </div>
-              <div className="flex justify-center">
-                <div className="p-6 glass bg-white/10 rounded-2xl shadow-lg border border-primary/20">
-                  <img 
-                    src="/src/assets/quantum_coalition_logo.png" 
-                    alt="Quantum Coalition Logo" 
-                    className="w-64 h-auto rounded-lg"
-                  />
-                </div>
-              </div>
+            <div className="text-center">
+              <h2 className="text-2xl font-bold text-primary mb-4">Student-Led Excellence</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Our tutoring program is designed and led by high-achieving students who understand the challenges faced by their peers. Through peer-to-peer mentorship, we create supportive learning environments that build both academic skills and personal confidence.
+              </p>
             </div>
           </div>
           

@@ -16,7 +16,7 @@ export default function Home() {
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-10">
-            <div className="text-7xl mb-6 animate-pulse-quantum text-quantum">☀️</div>
+            <img src="/attached_assets/TWP_1754535698470.jpeg" alt="The Wingman Project" className="w-24 h-24 mx-auto mb-6 rounded-2xl animate-pulse-quantum shadow-2xl" />
           </div>
           <h1 className="md:text-7xl font-bold mb-8 tracking-tight text-[96px] text-white">The Wingman Project</h1>
           <p className="text-xl md:text-2xl mb-10 font-light max-w-4xl mx-auto leading-relaxed text-white">Student-led tutoring for underserved youth. Together, we rise.</p>

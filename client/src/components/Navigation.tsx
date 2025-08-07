@@ -25,7 +25,7 @@ export default function Navigation() {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0 flex items-center" onClick={closeMobileMenu}>
-              <span className="text-3xl text-primary mr-3 animate-pulse-quantum">☀️</span>
+              <img src="/attached_assets/TWP_1754535698470.jpeg" alt="The Wingman Project Logo" className="w-10 h-10 mr-3 rounded-lg animate-pulse-quantum" />
               <span className="text-xl font-bold text-primary">The Wingman Project</span>
             </Link>
           </div>

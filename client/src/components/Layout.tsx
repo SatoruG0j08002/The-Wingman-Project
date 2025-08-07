@@ -12,8 +12,8 @@ export default function Layout({ children }: LayoutProps) {
       <footer className="relative bg-gradient-to-br from-primary via-secondary to-accent text-white py-16 overflow-hidden">
         {/* Inspiring background pattern */}
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-8 left-12 w-16 h-16 border border-white rounded-full animate-quantum-wave">
-            <div className="w-full h-full flex items-center justify-center text-white text-lg">☀️</div>
+          <div className="absolute top-8 left-12 w-16 h-16 border border-white rounded-full animate-quantum-wave overflow-hidden">
+            <img src="/attached_assets/TWP_1754535698470.jpeg" alt="" className="w-full h-full object-cover rounded-full" />
           </div>
           <div className="absolute top-24 right-20 w-12 h-12 border border-white rounded-full animate-quantum-wave" style={{animationDelay: '1s'}}>
             <div className="w-full h-full flex items-center justify-center text-white text-sm">📚</div>
@@ -29,7 +29,7 @@ export default function Layout({ children }: LayoutProps) {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center mb-4">
-                <span className="text-3xl text-quantum mr-3 animate-pulse-quantum">☀️</span>
+                <img src="/attached_assets/TWP_1754535698470.jpeg" alt="The Wingman Project" className="w-8 h-8 mr-3 rounded-lg animate-pulse-quantum" />
                 <span className="text-xl font-bold">The Wingman Project</span>
               </div>
               <p className="text-orange-100 text-sm leading-relaxed">
