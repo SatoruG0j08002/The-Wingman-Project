@@ -26,7 +26,7 @@ export default function Navigation() {
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0 flex items-center" onClick={closeMobileMenu}>
               <span className="text-3xl text-primary mr-3 animate-pulse-quantum">⟨Q⟩</span>
-              <span className="text-xl font-bold text-primary">QubitMinded</span>
+              <span className="text-xl font-bold text-primary">The Wingman Project</span>
             </Link>
           </div>
           
@@ -83,7 +83,6 @@ export default function Navigation() {
           </div>
         </div>
       </div>
-      
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden glass backdrop-blur-xl bg-card/90 border-t border-border/20">

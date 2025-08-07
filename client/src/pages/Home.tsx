@@ -18,12 +18,8 @@ export default function Home() {
           <div className="mb-10">
             <div className="text-7xl mb-6 animate-pulse-quantum text-quantum">⟨Q⟩</div>
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight tracking-tight">
-            QubitMinded Teen Quantum Physics Challenge 2025
-          </h1>
-          <p className="text-xl md:text-2xl mb-10 font-light max-w-4xl mx-auto text-purple-100 leading-relaxed">
-            Dive deep into peer-reviewed quantum research and present your findings through creative slideshows and posters
-          </p>
+          <h1 className="md:text-7xl font-bold mb-8 tracking-tight text-[96px] text-[#000000]">The Wingman Project</h1>
+          <p className="text-xl md:text-2xl mb-10 font-light max-w-4xl mx-auto leading-relaxed text-[#000000]">Being there for underserved youth.</p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link
               href="/about"
@@ -42,7 +38,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Competition Highlights */}
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -86,7 +81,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Competition Categories */}
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

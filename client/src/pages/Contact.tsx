@@ -32,7 +32,7 @@ const faqData: FAQItem[] = [
   },
   {
     question: "Are international students eligible?",
-    answer: "Absolutely! The competition is open to high school students worldwide. All submissions must be in English, but we welcome participants from all countries."
+    answer: "No. For the 2025 year, we are planning to pilot this program for only Texas high school students. We plan to expand this initiaive to all high schoolers across the U.S. in 2026."
   }
 ];
 

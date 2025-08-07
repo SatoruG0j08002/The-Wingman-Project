@@ -154,7 +154,7 @@ export default function Submission() {
             </div>
             <h3 className="text-3xl font-bold text-primary mb-4">Official Submission Portal</h3>
             <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto">
-              Submit your quantum entry through our secure Google Form portal for QubitMinded 2025
+              Submit your quantum entry through our submission portal for QubitMinded 2025
             </p>
           </div>
           

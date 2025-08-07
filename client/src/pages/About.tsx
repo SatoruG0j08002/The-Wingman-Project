@@ -111,6 +111,7 @@ export default function About() {
               </div>
             </div>
           </div>
+          
           <div>
             <h2 className="text-3xl font-bold text-primary mb-8">Guidelines & Timeline</h2>
             <div className="space-y-8">
@@ -135,6 +136,27 @@ export default function About() {
                   </div>
                 </div>
               </div>
+              
+              <div className="glass bg-gradient-to-br from-accent/5 to-quantum/5 p-8 rounded-3xl border border-accent/20">
+                <h3 className="font-bold text-xl mb-6 text-foreground">Thanks to our Sponsors!</h3>
+                <div className="space-y-6">
+                  <div className="p-4 rounded-2xl bg-background/50 border border-secondary/20">
+                    <h4 className="font-bold text-secondary text-lg mb-2">(Sponsor 1)</h4>
+                    <p className="text-muted-foreground leading-relaxed">[insert logo].</p>
+                  </div>
+                  <div className="p-4 rounded-2xl bg-background/50 border border-accent/20">
+                    <h4 className="font-bold text-accent text-lg mb-2">Sponsor 2</h4>
+                    <p className="text-muted-foreground leading-relaxed">[insert logo].</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="glass bg-gradient-to-br from-quantum/5 to-primary/5 p-8 rounded-3xl border border-quantum/20">
+                <h3 className="font-bold text-xl mb-4 text-foreground">And lastly... Have a great competition!</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Your presentations are an oppurtunity to dive headfirst into real-world research. While the process can be challenging, have fun, and explore the interesting applications of quantum physics!
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -150,7 +172,7 @@ export default function About() {
           <div className="relative">
             <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center">Awards & Recognition</h2>
             <p className="text-xl text-purple-100 text-center mb-12 max-w-3xl mx-auto">
-              Outstanding research presentations are recognized with scholarships and opportunities in the quantum science community
+              Outstanding research presentations are recognized with valuable networking opportunities within the quantum science community
             </p>
             
             <div className="grid md:grid-cols-3 gap-8">
@@ -158,24 +180,24 @@ export default function About() {
                 <div className="bg-gradient-to-br from-yellow-400 to-yellow-600 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl">
                   <span className="text-4xl">🏆</span>
                 </div>
-                <h3 className="text-2xl font-bold mb-3">1st Place</h3>
-                <p className="text-purple-100 leading-relaxed">$5,000 scholarship + mentorship with quantum researchers</p>
+                <h3 className="text-2xl font-bold mb-3">Top 5</h3>
+                <p className="text-purple-100 leading-relaxed">Your win will be posted on our website, and you'll be able to ccess to real quantum hardware with (Sponsor's) advanced tier. You'll also be invited to a networking session with undergraduate and graduate students of top research universities working in quantum computing, physics, and more!</p>
               </div>
               
               <div className="text-center glass bg-white/10 p-8 rounded-3xl border border-white/20">
                 <div className="bg-gradient-to-br from-gray-400 to-gray-600 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl">
                   <span className="text-4xl">🥈</span>
                 </div>
-                <h3 className="text-2xl font-bold mb-3">2nd Place</h3>
-                <p className="text-purple-100 leading-relaxed">$3,000 scholarship + quantum research lab visit</p>
+                <h3 className="text-2xl font-bold mb-3">Top 20</h3>
+                <p className="text-purple-100 leading-relaxed"> You'll be invited to a networking session with undergraduate and graduate students of top research universities working in quantum. Also, you'll recieve a Certificate of Excellence and a mention on our website!</p>
               </div>
               
               <div className="text-center glass bg-white/10 p-8 rounded-3xl border border-white/20">
                 <div className="bg-gradient-to-br from-orange-500 to-orange-700 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl">
                   <span className="text-4xl">🥉</span>
                 </div>
-                <h3 className="text-2xl font-bold mb-3">3rd Place</h3>
-                <p className="text-purple-100 leading-relaxed">$1,500 scholarship + certificate of excellence</p>
+                <h3 className="text-2xl font-bold mb-3">Honrable Mentions (Usually 5 extraordinary submissions that didn't qualify for Top 5 or 20).</h3>
+                <p className="text-purple-100 leading-relaxed">You'll recieve a Certificate of Excellence + Mention on our website!</p>
               </div>
             </div>
           </div>
