@@ -1,54 +1,11 @@
-import { useState } from "react";
-
-interface FAQItem {
-  question: string;
-  answer: string;
-}
-
-const faqData: FAQItem[] = [
-  {
-    question: "Do I need prior experience in quantum physics?",
-    answer: "No prior experience is required! The competition is designed to encourage students to explore quantum concepts through peer-reviewed research. We provide guidance on how to read and analyze scientific papers."
-  },
-  {
-    question: "Can I work with a mentor?",
-    answer: "Yes! We encourage students to work with teachers, professors, or mentors. However, the analysis and presentation must be your original work, and you must acknowledge all assistance received."
-  },
-  {
-    question: "What presentation formats are accepted?",
-    answer: "We accept slideshows (PowerPoint, Google Slides, PDF) or research posters. Slideshows should be 10-20 slides, and posters should follow standard academic conference formats."
-  },
-  {
-    question: "Who judges the submissions?",
-    answer: "Submissions are evaluated by undergraduate and graduate students from quantum computing clubs across universities in the Quantum Coalition network, providing expert peer review from the next generation of quantum researchers."
-  },
-  {
-    question: "Can teams participate?",
-    answer: "No, this competition focuses on individual research skills. We want to see each student's personal ability to analyze complex quantum physics literature and communicate their understanding."
-  },
-  {
-    question: "What are the two competition categories?",
-    answer: "Quantum Computation (covering circuits, qubits, algorithms, cryptography) and Quantum Physics (covering hardware design, path integrals, QED, superposition, entanglement). Choose the category that matches your research focus."
-  },
-  {
-    question: "Are international students eligible?",
-    answer: "No. For the 2025 year, we are planning to pilot this program for only Texas high school students. We plan to expand this initiaive to all high schoolers across the U.S. in 2026."
-  }
-];
-
 export default function Contact() {
-  const [openFAQ, setOpenFAQ] = useState<number | null>(null);
-
-  const toggleFAQ = (index: number) => {
-    setOpenFAQ(openFAQ === index ? null : index);
-  };
 
   return (
     <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold text-primary mb-8">Contact & FAQ</h1>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">Get in touch with our team or find answers to frequently asked questions about the QubitMinded 2025 competition</p>
+          <h1 className="text-5xl md:text-6xl font-bold text-primary mb-8">Contact Us</h1>
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">Get in touch with our team and meet the leadership behind The Wingman Project</p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16">
@@ -63,7 +20,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-xl text-foreground mb-2">Email Support</h3>
-                    <p className="text-muted-foreground mb-1">info@quantumchallenge.org</p>
+                    <p className="text-muted-foreground mb-1">info@wingmanproject.org</p>
                     <p className="text-sm text-muted-foreground">Response within 24 hours</p>
                   </div>
                 </div>
@@ -115,29 +72,81 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* FAQ Section */}
+          {/* Leadership Section */}
           <div>
-            <h2 className="text-3xl font-bold text-primary mb-8">Frequently Asked Questions</h2>
+            <h2 className="text-3xl font-bold text-primary mb-8">Our Leadership Team</h2>
             <div className="space-y-6">
-              {faqData.map((faq, index) => (
-                <div key={index} className="glass bg-card/60 border border-border/50 rounded-3xl overflow-hidden hover:border-primary/30 transition-all duration-300">
-                  <button
-                    onClick={() => toggleFAQ(index)}
-                    className="w-full text-left p-6 hover:bg-primary/5 transition-all duration-300"
-                    data-testid={`faq-question-${index}`}
-                  >
-                    <div className="flex justify-between items-center">
-                      <span className="font-bold text-foreground text-lg pr-4">{faq.question}</span>
-                      <i className={`fas fa-chevron-down transform transition-transform duration-300 text-primary ${openFAQ === index ? 'rotate-180' : ''}`}></i>
+              {/* President */}
+              <div className="glass bg-card/60 p-6 rounded-3xl border border-border/50 hover:border-primary/30 transition-all duration-300">
+                <div className="flex items-start space-x-6">
+                  <div className="w-24 h-24 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow-lg">
+                    P
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-bold text-xl text-foreground mb-2">President</h3>
+                    <p className="text-muted-foreground mb-3 leading-relaxed">
+                      Leading our mission to provide accessible, peer-to-peer tutoring for underserved youth. Overseeing strategic direction and community partnerships.
+                    </p>
+                    <div className="text-sm text-muted-foreground">
+                      <span className="font-semibold">Position available</span> - Contact us to learn more
                     </div>
-                  </button>
-                  {openFAQ === index && (
-                    <div className="px-6 pb-6 text-muted-foreground leading-relaxed bg-primary/5">
-                      {faq.answer}
-                    </div>
-                  )}
+                  </div>
                 </div>
-              ))}
+              </div>
+
+              {/* Outreach Coordinator */}
+              <div className="glass bg-card/60 p-6 rounded-3xl border border-border/50 hover:border-secondary/30 transition-all duration-300">
+                <div className="flex items-start space-x-6">
+                  <div className="w-24 h-24 bg-gradient-to-br from-secondary to-accent rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow-lg">
+                    O
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-bold text-xl text-foreground mb-2">Outreach Coordinator</h3>
+                    <p className="text-muted-foreground mb-3 leading-relaxed">
+                      Building connections with schools and communities to identify students who would benefit from our tutoring services. Developing outreach programs and partnerships.
+                    </p>
+                    <div className="text-sm text-muted-foreground">
+                      <span className="font-semibold">Position available</span> - Contact us to learn more
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Web Developer */}
+              <div className="glass bg-card/60 p-6 rounded-3xl border border-border/50 hover:border-accent/30 transition-all duration-300">
+                <div className="flex items-start space-x-6">
+                  <div className="w-24 h-24 bg-gradient-to-br from-accent to-quantum rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow-lg">
+                    W
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-bold text-xl text-foreground mb-2">Web Developer</h3>
+                    <p className="text-muted-foreground mb-3 leading-relaxed">
+                      Maintaining and enhancing our digital platform to ensure seamless access to tutoring resources and services for students and volunteers.
+                    </p>
+                    <div className="text-sm text-muted-foreground">
+                      <span className="font-semibold">Position available</span> - Contact us to learn more
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Student-teacher Coordinator */}
+              <div className="glass bg-card/60 p-6 rounded-3xl border border-border/50 hover:border-quantum/30 transition-all duration-300">
+                <div className="flex items-start space-x-6">
+                  <div className="w-24 h-24 bg-gradient-to-br from-quantum to-primary rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow-lg">
+                    S
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-bold text-xl text-foreground mb-2">Student-teacher Coordinator</h3>
+                    <p className="text-muted-foreground mb-3 leading-relaxed">
+                      Recruiting, training, and supporting our student tutors. Matching tutors with students and ensuring quality educational experiences for all participants.
+                    </p>
+                    <div className="text-sm text-muted-foreground">
+                      <span className="font-semibold">Position available</span> - Contact us to learn more
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
