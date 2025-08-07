@@ -16,10 +16,10 @@ export default function Home() {
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-10">
-            <div className="text-7xl mb-6 animate-pulse-quantum text-quantum">⟨Q⟩</div>
+            <div className="text-7xl mb-6 animate-pulse-quantum text-quantum">☀️</div>
           </div>
-          <h1 className="md:text-7xl font-bold mb-8 tracking-tight text-[96px] text-[#000000]">The Wingman Project</h1>
-          <p className="text-xl md:text-2xl mb-10 font-light max-w-4xl mx-auto leading-relaxed text-[#000000]">Being there for underserved youth.</p>
+          <h1 className="md:text-7xl font-bold mb-8 tracking-tight text-[96px] text-white">The Wingman Project</h1>
+          <p className="text-xl md:text-2xl mb-10 font-light max-w-4xl mx-auto leading-relaxed text-white">Student-led tutoring for underserved youth. Together, we rise.</p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link
               href="/about"
@@ -31,9 +31,9 @@ export default function Home() {
             <Link
               href="/submission"
               className="bg-accent hover:bg-accent/90 text-white px-10 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 shadow-2xl inline-block text-center animate-glow"
-              data-testid="button-submit-entry"
+              data-testid="button-get-started"
             >
-              Submit Your Entry
+              Get Started
             </Link>
           </div>
         </div>
@@ -42,52 +42,52 @@ export default function Home() {
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">Why Join the Challenge?</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">Why Choose The Wingman Project?</h2>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              Explore cutting-edge quantum research through peer-reviewed articles and showcase your understanding through creative presentations
+              Student-led, peer-to-peer tutoring that creates lasting connections and builds confidence in learning
             </p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-10">
             <div className="text-center p-8 rounded-3xl glass bg-card/50 hover:bg-card/80 transition-all duration-300 border border-border/50 hover:border-primary/20 hover:shadow-2xl">
               <div className="bg-gradient-to-br from-secondary to-primary text-white w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
-                <span className="text-3xl font-bold">|0⟩</span>
+                <span className="text-3xl font-bold">🤝</span>
               </div>
-              <h3 className="text-2xl font-semibold mb-4 text-foreground">Research Excellence</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-foreground">Peer-to-Peer Learning</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Dive into peer-reviewed quantum physics articles and develop critical analysis skills valued by universities
+                Learn from fellow students who understand your challenges and speak your language
               </p>
             </div>
             
             <div className="text-center p-8 rounded-3xl glass bg-card/50 hover:bg-card/80 transition-all duration-300 border border-border/50 hover:border-primary/20 hover:shadow-2xl">
               <div className="bg-gradient-to-br from-accent to-quantum text-white w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
-                <span className="text-3xl font-bold">|1⟩</span>
+                <span className="text-3xl font-bold">💡</span>
               </div>
-              <h3 className="text-2xl font-semibold mb-4 text-foreground">Creative Expression</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-foreground">Personalized Support</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Transform complex quantum concepts into engaging slideshows and posters that communicate science effectively
+                Get one-on-one attention tailored to your learning style and academic needs
               </p>
             </div>
             
             <div className="text-center p-8 rounded-3xl glass bg-card/50 hover:bg-card/80 transition-all duration-300 border border-border/50 hover:border-primary/20 hover:shadow-2xl">
               <div className="bg-gradient-to-br from-quantum to-accent text-white w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
-                <span className="text-3xl font-bold">|+⟩</span>
+                <span className="text-3xl font-bold">🌟</span>
               </div>
-              <h3 className="text-2xl font-semibold mb-4 text-foreground">Expert Evaluation</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-foreground">Building Confidence</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Get feedback from undergraduate and graduate students in the Quantum Coalition's university chapters
+                Develop academic confidence and life skills through supportive, encouraging mentorship
               </p>
             </div>
           </div>
         </div>
       </section>
-      {/* Competition Categories */}
+      {/* Tutoring Services */}
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">Competition Categories</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">Our Tutoring Services</h2>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              Choose your quantum specialty and explore peer-reviewed research in your area of interest
+              Comprehensive academic support across core subjects, designed to meet students where they are
             </p>
           </div>
           
@@ -96,19 +96,19 @@ export default function Home() {
               <div className="glass bg-card/60 p-8 rounded-3xl border border-border/50 hover:border-secondary/30 transition-all duration-300 hover:shadow-xl">
                 <div className="flex items-start">
                   <div className="bg-gradient-to-br from-secondary to-primary text-white w-16 h-16 rounded-2xl flex items-center justify-center mr-6 mt-1 shadow-lg">
-                    <i className="fas fa-microchip text-xl"></i>
+                    <span className="text-2xl">📚</span>
                   </div>
                   <div>
-                    <h3 className="font-bold text-2xl text-foreground mb-3">Quantum Computation</h3>
+                    <h3 className="font-bold text-2xl text-foreground mb-3">Core Academics</h3>
                     <p className="text-muted-foreground mb-4 leading-relaxed">
-                      Explore the various concepts and real-world applications of quantum computing.
+                      Comprehensive support in essential subjects to build strong foundations for academic success.
                     </p>
-                    <p className="text-sm text-muted-foreground/80 mb-2 font-medium">Example Topics:</p>
+                    <p className="text-sm text-muted-foreground/80 mb-2 font-medium">Subject Areas:</p>
                     <div className="flex flex-wrap gap-2">
-                      <span className="px-3 py-1 text-xs bg-secondary/10 text-secondary rounded-full border border-secondary/20">Quantum Circuits</span>
-                      <span className="px-3 py-1 text-xs bg-secondary/10 text-secondary rounded-full border border-secondary/20">Qubits</span>
-                      <span className="px-3 py-1 text-xs bg-secondary/10 text-secondary rounded-full border border-secondary/20">Algorithms</span>
-                      <span className="px-3 py-1 text-xs bg-secondary/10 text-secondary rounded-full border border-secondary/20">Cryptography</span>
+                      <span className="px-3 py-1 text-xs bg-secondary/10 text-secondary rounded-full border border-secondary/20">Mathematics</span>
+                      <span className="px-3 py-1 text-xs bg-secondary/10 text-secondary rounded-full border border-secondary/20">English</span>
+                      <span className="px-3 py-1 text-xs bg-secondary/10 text-secondary rounded-full border border-secondary/20">Science</span>
+                      <span className="px-3 py-1 text-xs bg-secondary/10 text-secondary rounded-full border border-secondary/20">History</span>
                     </div>
                   </div>
                 </div>
@@ -117,28 +117,28 @@ export default function Home() {
               <div className="glass bg-card/60 p-8 rounded-3xl border border-border/50 hover:border-accent/30 transition-all duration-300 hover:shadow-xl">
                 <div className="flex items-start">
                   <div className="bg-gradient-to-br from-accent to-quantum text-white w-16 h-16 rounded-2xl flex items-center justify-center mr-6 mt-1 shadow-lg">
-                    <i className="fas fa-atom text-xl"></i>
+                    <span className="text-2xl">🎯</span>
                   </div>
                   <div>
-                    <h3 className="font-bold text-2xl text-foreground mb-3">Quantum Physics</h3>
+                    <h3 className="font-bold text-2xl text-foreground mb-3">Test Preparation</h3>
                     <p className="text-muted-foreground mb-4 leading-relaxed">
-                      Investigate the core principles of quantum physics, and how it revolutionized our model of the universe, as well as information processing.
+                      Focused study sessions to help students excel on standardized tests and important exams.
                     </p>
-                    <p className="text-sm text-muted-foreground/80 mb-2 font-medium">Example Topics:</p>
+                    <p className="text-sm text-muted-foreground/80 mb-2 font-medium">Test Support:</p>
                     <div className="flex flex-wrap gap-2">
-                      <span className="px-3 py-1 text-xs bg-accent/10 text-accent rounded-full border border-accent/20">Hardware Design</span>
-                      <span className="px-3 py-1 text-xs bg-accent/10 text-accent rounded-full border border-accent/20">Path Integral</span>
-                      <span className="px-3 py-1 text-xs bg-accent/10 text-accent rounded-full border border-accent/20">QED</span>
-                      <span className="px-3 py-1 text-xs bg-accent/10 text-accent rounded-full border border-accent/20">Entanglement</span>
+                      <span className="px-3 py-1 text-xs bg-accent/10 text-accent rounded-full border border-accent/20">SAT/ACT</span>
+                      <span className="px-3 py-1 text-xs bg-accent/10 text-accent rounded-full border border-accent/20">AP Exams</span>
+                      <span className="px-3 py-1 text-xs bg-accent/10 text-accent rounded-full border border-accent/20">State Tests</span>
+                      <span className="px-3 py-1 text-xs bg-accent/10 text-accent rounded-full border border-accent/20">College Prep</span>
                     </div>
                   </div>
                 </div>
               </div>
 
               <div className="glass bg-gradient-to-br from-primary/5 to-accent/5 p-8 rounded-3xl border border-primary/20">
-                <h3 className="font-bold text-xl text-foreground mb-4">Judged by Quantum Coalition</h3>
+                <h3 className="font-bold text-xl text-foreground mb-4">Student-Led Excellence</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Your presentations will be evaluated by undergraduate and graduate students from quantum computing clubs across universities in the Quantum Coalition network.
+                  Our tutors are high-achieving students who understand the challenges you face and are passionate about helping their peers succeed.
                 </p>
               </div>
             </div>
@@ -146,18 +146,18 @@ export default function Home() {
             <div className="glass bg-card/60 p-10 rounded-3xl border border-border/50 shadow-2xl">
               <div className="text-center mb-8">
                 <div className="w-24 h-24 bg-gradient-to-br from-primary to-accent rounded-3xl mx-auto mb-6 flex items-center justify-center shadow-lg">
-                  <i className="fas fa-rocket text-3xl text-white"></i>
+                  <span className="text-4xl">🚀</span>
                 </div>
-                <h3 className="text-3xl font-bold text-foreground mb-4">Ready to Explore?</h3>
+                <h3 className="text-3xl font-bold text-foreground mb-4">Ready to Excel?</h3>
                 <p className="text-muted-foreground leading-relaxed mb-8">
-                  Start your quantum research journey by diving into cutting-edge peer-reviewed articles and creating compelling presentations.
+                  Join our supportive community of student tutors and start your journey toward academic success today.
                 </p>
                 <Link
               href="/submission"
                   className="w-full bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white py-4 px-8 rounded-2xl font-semibold text-lg transition-all duration-300 inline-block text-center shadow-xl hover:shadow-2xl"
-                  data-testid="button-start-research"
+                  data-testid="button-get-tutoring"
                 >
-                  Start Your Entry
+                  Get Tutoring
                 </Link>
               </div>
             </div>

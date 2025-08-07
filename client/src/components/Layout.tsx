@@ -10,28 +10,36 @@ export default function Layout({ children }: LayoutProps) {
       <Navigation />
       <main>{children}</main>
       <footer className="relative bg-gradient-to-br from-primary via-secondary to-accent text-white py-16 overflow-hidden">
-        {/* Quantum background pattern */}
+        {/* Inspiring background pattern */}
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-8 left-12 w-16 h-16 border border-white rounded-full animate-quantum-wave"></div>
-          <div className="absolute top-24 right-20 w-12 h-12 border border-white rounded-full animate-quantum-wave" style={{animationDelay: '1s'}}></div>
-          <div className="absolute bottom-20 left-1/4 w-20 h-20 border border-white rounded-full animate-quantum-wave" style={{animationDelay: '2s'}}></div>
-          <div className="absolute bottom-32 right-1/3 w-8 h-8 border border-white rounded-full animate-quantum-wave" style={{animationDelay: '3s'}}></div>
+          <div className="absolute top-8 left-12 w-16 h-16 border border-white rounded-full animate-quantum-wave">
+            <div className="w-full h-full flex items-center justify-center text-white text-lg">☀️</div>
+          </div>
+          <div className="absolute top-24 right-20 w-12 h-12 border border-white rounded-full animate-quantum-wave" style={{animationDelay: '1s'}}>
+            <div className="w-full h-full flex items-center justify-center text-white text-sm">📚</div>
+          </div>
+          <div className="absolute bottom-20 left-1/4 w-20 h-20 border border-white rounded-full animate-quantum-wave" style={{animationDelay: '2s'}}>
+            <div className="w-full h-full flex items-center justify-center text-white text-xl">🤝</div>
+          </div>
+          <div className="absolute bottom-32 right-1/3 w-8 h-8 border border-white rounded-full animate-quantum-wave" style={{animationDelay: '3s'}}>
+            <div className="w-full h-full flex items-center justify-center text-white text-xs">🌟</div>
+          </div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center mb-4">
-                <i className="fas fa-atom text-3xl text-quantum mr-3 animate-pulse-quantum"></i>
-                <span className="text-xl font-bold">Teen Quantum Challenge</span>
+                <span className="text-3xl text-quantum mr-3 animate-pulse-quantum">☀️</span>
+                <span className="text-xl font-bold">The Wingman Project</span>
               </div>
-              <p className="text-purple-100 text-sm leading-relaxed">
-                Inspiring the next generation of quantum researchers through peer-reviewed article exploration and creative presentation.
+              <p className="text-orange-100 text-sm leading-relaxed">
+                Empowering underserved youth through student-led tutoring and mentorship that builds confidence and academic success.
               </p>
             </div>
 
             <div>
               <h3 className="font-semibold mb-4">Quick Links</h3>
-              <ul className="space-y-2 text-purple-100">
+              <ul className="space-y-2 text-orange-100">
                 <li>
                   <a href="/" className="hover:text-white transition-colors">
                     Home
@@ -44,7 +52,7 @@ export default function Layout({ children }: LayoutProps) {
                 </li>
                 <li>
                   <a href="/submission" className="hover:text-white transition-colors">
-                    Submit
+                    Get Started
                   </a>
                 </li>
                 <li>
@@ -56,26 +64,26 @@ export default function Layout({ children }: LayoutProps) {
             </div>
 
             <div>
-              <h3 className="font-semibold mb-4">Competition</h3>
-              <ul className="space-y-2 text-purple-100">
+              <h3 className="font-semibold mb-4">Our Services</h3>
+              <ul className="space-y-2 text-orange-100">
                 <li>
                   <a href="/about" className="hover:text-white transition-colors">
-                    Rules & Guidelines
+                    Math Tutoring
                   </a>
                 </li>
                 <li>
                   <a href="/about" className="hover:text-white transition-colors">
-                    Categories
+                    English Support
                   </a>
                 </li>
                 <li>
                   <a href="/contact" className="hover:text-white transition-colors">
-                    Quantum Coalition
+                    Test Prep
                   </a>
                 </li>
                 <li>
                   <a href="/contact" className="hover:text-white transition-colors">
-                    Resources
+                    Study Skills
                   </a>
                 </li>
               </ul>
@@ -84,22 +92,22 @@ export default function Layout({ children }: LayoutProps) {
             <div>
               <h3 className="font-semibold mb-4">Connect</h3>
               <div className="flex space-x-4 mb-4">
-                <a href="#" className="text-purple-100 hover:text-white text-xl transition-colors">
-                  <i className="fab fa-twitter"></i>
+                <a href="#" className="text-orange-100 hover:text-white text-xl transition-colors">
+                  📱
                 </a>
-                <a href="#" className="text-purple-100 hover:text-white text-xl transition-colors">
-                  <i className="fab fa-facebook"></i>
+                <a href="#" className="text-orange-100 hover:text-white text-xl transition-colors">
+                  📧
                 </a>
-                <a href="#" className="text-purple-100 hover:text-white text-xl transition-colors">
-                  <i className="fab fa-instagram"></i>
+                <a href="#" className="text-orange-100 hover:text-white text-xl transition-colors">
+                  💬
                 </a>
-                <a href="#" className="text-purple-100 hover:text-white text-xl transition-colors">
-                  <i className="fab fa-youtube"></i>
+                <a href="#" className="text-orange-100 hover:text-white text-xl transition-colors">
+                  📍
                 </a>
               </div>
-              <div className="text-purple-100 text-sm">
-                <p>Email: info@quantumchallenge.org</p>
-                <p>Phone: +1 (555) 123-4567</p>
+              <div className="text-orange-100 text-sm">
+                <p>Email: info@wingmanproject.org</p>
+                <p>Phone: +1 (555) 987-6543</p>
               </div>
             </div>
           </div>

@@ -9,8 +9,8 @@ The application follows a monorepo structure with a React frontend and Express.j
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
-Design preferences: Apple-inspired interface with purple/blue quantum-abstract aesthetics, glass morphism effects, and smooth transitions.
-Competition format: Individual submissions only (no teams), peer-reviewed article analysis presented through slideshows or posters.
+Design preferences: Warm, friendly sunrise/sunset theme with red and yellow hues. Modern and sleek design that creates a welcoming atmosphere for underserved youth. Student-led tutoring service focus.
+Service focus: Student-led tutoring for underserved youth with peer-to-peer mentorship approach.
 
 ## System Architecture
 
@@ -68,13 +68,14 @@ Competition format: Individual submissions only (no teams), peer-reviewed articl
 - **Criteria**: Research depth, presentation clarity, understanding of quantum concepts, proper citation of peer-reviewed sources
 
 ### Recent Changes (August 2025)
-- Rebranded to "QubitMinded Teen Quantum Physics Challenge 2025"
-- Updated from team-based to individual competition format
-- Redesigned with quantum-inspired Apple aesthetics using purple/blue color scheme
-- Added glass morphism effects and custom quantum wave animations
-- Integrated Quantum Coalition as judging body with partnership section and external link
-- Implemented comprehensive dark theme with qubit-themed graphics (⟨Q⟩, |0⟩, |1⟩, ⊗)
-- Added Texas pilot program information with 2026 expansion plans
-- Included competition deadlines: September 15, 2025 (submissions open) - November 15, 2025 (deadline) - February 2026 (results)
-- Updated all pages with new design system and competition information
-- Replaced all white icons with quantum symbols and emojis for better visibility
+- Complete theme transformation from quantum physics competition to student-led tutoring service
+- Rebranded to "The Wingman Project" - student tutoring for underserved youth
+- Implemented warm sunrise/sunset color scheme with red and yellow hues
+- Updated design to be more friendly and welcoming for youth-focused service
+- Replaced quantum symbols with supportive, educational emojis (☀️, 📚, 🤝, 🌟, 💡)
+- Changed from dark purple/blue theme to light, warm backgrounds
+- Updated homepage content to focus on peer-to-peer tutoring, academic support, and confidence building
+- Modified navigation and footer to reflect tutoring services instead of competition
+- Maintained glass morphism effects but adapted colors for warm theme
+- Added dark mode support with warm color variants
+- Updated all text content from quantum research focus to tutoring and mentorship
