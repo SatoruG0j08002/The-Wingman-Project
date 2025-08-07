@@ -20,8 +20,8 @@ export default function Home() {
           <div className="mb-10">
             <img src={Screenshot_2025_08_06_10_05_59_PM} alt="The Wingman Project" className="w-24 h-24 mx-auto mb-6 rounded-2xl animate-pulse-quantum shadow-2xl" />
           </div>
-          <h1 className="md:text-7xl font-bold mb-8 tracking-tight text-[96px] text-white">The Wingman Project</h1>
-          <p className="text-xl md:text-2xl mb-10 font-light max-w-4xl mx-auto leading-relaxed text-white">Student-led tutoring for underserved youth. Together, we rise.</p>
+          <h1 className="md:text-7xl font-bold mb-8 tracking-tight text-[96px] text-[#000000]">The Wingman Project</h1>
+          <p className="text-xl md:text-2xl mb-10 font-light max-w-4xl mx-auto leading-relaxed text-[#000000]">Student-led tutoring for underserved youth. Together, we rise.</p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link
               href="/about"
