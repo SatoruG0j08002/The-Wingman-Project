@@ -19,7 +19,7 @@ export default function Submission() {
     <section className="py-20 bg-background">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold text-primary mb-8">Submit Your Entry</h1>
+          <h1 className="text-5xl md:text-6xl font-bold text-primary mb-8">Are you ready to learn or to teach? Sign up here!</h1>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             Ready to submit your quantum entry? Follow our step-by-step guide to ensure your presentation showcases your best work analyzing peer-reviewed quantum research.
           </p>
