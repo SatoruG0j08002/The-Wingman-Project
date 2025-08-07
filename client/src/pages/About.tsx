@@ -3,7 +3,7 @@ export default function About() {
     <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold text-primary mb-8">About QubitMinded</h1>
+          <h1 className="text-5xl md:text-6xl font-bold text-primary mb-8">About The Wingman Project</h1>
           <p className="text-xl text-muted-foreground max-w-5xl mx-auto leading-relaxed">
             QubitMinded Teen Quantum Physics Challenge empowers high school students to explore cutting-edge quantum research through peer-reviewed articles and express their understanding through creative slideshows and posters.
           </p>
