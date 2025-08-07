@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
 
+import Screenshot_2025_08_06_10_05_59_PM from "@assets/Screenshot 2025-08-06 10.05.59 PM.png";
+
 export default function Navigation() {
   const [location] = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -25,7 +27,7 @@ export default function Navigation() {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0 flex items-center" onClick={closeMobileMenu}>
-              <img src="/attached_assets/TWP_1754535698470.jpeg" alt="The Wingman Project Logo" className="w-10 h-10 mr-3 rounded-lg animate-pulse-quantum" />
+              <img src={Screenshot_2025_08_06_10_05_59_PM} alt="The Wingman Project Logo" className="w-10 h-10 mr-3 rounded-lg animate-pulse-quantum" />
               <span className="text-xl font-bold text-primary">The Wingman Project</span>
             </Link>
           </div>
