@@ -107,13 +107,13 @@ export default function Layout({ children }: LayoutProps) {
               </div>
               <div className="text-orange-100 text-sm">
                 <p>Email: info@wingmanproject.org</p>
-                <p>Phone: +1 (555) 987-6543</p>
+                <p>Phone: (TBD)</p>
               </div>
             </div>
           </div>
 
           <div className="border-t border-purple-400/30 pt-8 mt-8 text-center text-purple-100">
-            <p>&copy; 2024 Teen Quantum Physics Challenge. All rights reserved.</p>
+            <p>&copy; The Wingman Project. All rights reserved.</p>
           </div>
         </div>
       </footer>

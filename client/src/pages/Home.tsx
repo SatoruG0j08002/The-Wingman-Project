@@ -111,6 +111,7 @@ export default function Home() {
                       <span className="px-3 py-1 text-xs bg-secondary/10 text-secondary rounded-full border border-secondary/20">English</span>
                       <span className="px-3 py-1 text-xs bg-secondary/10 text-secondary rounded-full border border-secondary/20">Science</span>
                       <span className="px-3 py-1 text-xs bg-secondary/10 text-secondary rounded-full border border-secondary/20">History</span>
+                      <span className="px-3 py-1 text-xs bg-secondary/10 text-secondary rounded-full border border-secondary/20">Electives</span>
                     </div>
                   </div>
                 </div>
@@ -122,27 +123,19 @@ export default function Home() {
                     <span className="text-2xl">🎯</span>
                   </div>
                   <div>
-                    <h3 className="font-bold text-2xl text-foreground mb-3">Test Preparation</h3>
+                    <h3 className="font-bold text-2xl text-foreground mb-3">Test Preparation (Planned for Fall 2026)</h3>
                     <p className="text-muted-foreground mb-4 leading-relaxed">
-                      Focused study sessions to help students excel on standardized tests and important exams.
+                      Fresh insight and focused study sessions to help students excel on standardized tests and important exams led by Seniors who've been through this exact process.
                     </p>
                     <p className="text-sm text-muted-foreground/80 mb-2 font-medium">Test Support:</p>
                     <div className="flex flex-wrap gap-2">
                       <span className="px-3 py-1 text-xs bg-accent/10 text-accent rounded-full border border-accent/20">SAT/ACT</span>
-                      <span className="px-3 py-1 text-xs bg-accent/10 text-accent rounded-full border border-accent/20">AP Exams</span>
-                      <span className="px-3 py-1 text-xs bg-accent/10 text-accent rounded-full border border-accent/20">State Tests</span>
-                      <span className="px-3 py-1 text-xs bg-accent/10 text-accent rounded-full border border-accent/20">College Prep</span>
+                      <span className="px-3 py-1 text-xs bg-accent/10 text-accent rounded-full border border-accent/20">College Admissions Prep/Essays</span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className="glass bg-gradient-to-br from-primary/5 to-accent/5 p-8 rounded-3xl border border-primary/20">
-                <h3 className="font-bold text-xl text-foreground mb-4">Student-Led Excellence</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Our tutors are high-achieving students who understand the challenges you face and are passionate about helping their peers succeed.
-                </p>
-              </div>
             </div>
             
             <div className="glass bg-card/60 p-10 rounded-3xl border border-border/50 shadow-2xl">

@@ -55,111 +55,67 @@ export default function Submission() {
           </div>
         </div>
 
-        {/* Submission Format Options */}
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <div className="glass bg-card/60 p-8 rounded-3xl border border-border/50 hover:border-secondary/30 transition-all duration-300 hover:shadow-xl">
-            <div className="text-center mb-6">
-              <div className="bg-gradient-to-br from-secondary to-primary w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
-                <span className="text-3xl">📊</span>
-              </div>
-              <h3 className="text-2xl font-bold text-foreground mb-3">Slideshow Presentation</h3>
-            </div>
-            <p className="text-muted-foreground mb-6 leading-relaxed">Create an engaging slideshow that walks through your quantum research analysis with clear explanations and visual aids.</p>
-            <ul className="text-muted-foreground space-y-2">
-              <li className="flex items-center"><span className="text-secondary mr-3">✓</span>PowerPoint, Google Slides, or PDF format</li>
-              <li className="flex items-center"><span className="text-secondary mr-3">✓</span>10-20 slides recommended</li>
-              <li className="flex items-center"><span className="text-secondary mr-3">✓</span>Include visuals and diagrams</li>
-              <li className="flex items-center"><span className="text-secondary mr-3">✓</span>Tell a clear research story</li>
-            </ul>
-          </div>
-          
-          <div className="glass bg-card/60 p-8 rounded-3xl border border-border/50 hover:border-accent/30 transition-all duration-300 hover:shadow-xl">
-            <div className="text-center mb-6">
-              <div className="bg-gradient-to-br from-accent to-quantum w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
-                <span className="text-3xl">📄</span>
-              </div>
-              <h3 className="text-2xl font-bold text-foreground mb-3">Research Poster</h3>
-            </div>
-            <p className="text-muted-foreground mb-6 leading-relaxed">Design a comprehensive poster that summarizes your quantum research findings in an academic conference style.</p>
-            <ul className="text-muted-foreground space-y-2">
-              <li className="flex items-center"><span className="text-accent mr-3">✓</span>Single page, high-resolution format</li>
-              <li className="flex items-center"><span className="text-accent mr-3">✓</span>Standard academic poster layout</li>
-              <li className="flex items-center"><span className="text-accent mr-3">✓</span>Include graphs and equations</li>
-              <li className="flex items-center"><span className="text-accent mr-3">✓</span>Professional scientific design</li>
-            </ul>
-          </div>
-        </div>
-
         {/* Google Form Integration */}
         <div className="glass bg-card/60 border border-border/50 rounded-3xl p-12 shadow-2xl">
           <div className="text-center mb-10">
             <div className="w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-xl animate-pulse-quantum">
               <span className="text-4xl">🚀</span>
             </div>
-            <h3 className="text-3xl font-bold text-primary mb-4">Official Submission Portal</h3>
+            <h3 className="text-3xl font-bold text-primary mb-4">Sign Up Today!</h3>
             <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl mx-auto">
-              Submit your quantum entry through our submission portal for QubitMinded 2025
+              Sign up as a prospective leadership member, tutor, or student and join The Wingman Project community.
             </p>
           </div>
-          
-          <div className="glass bg-gradient-to-br from-primary/5 to-accent/5 border border-primary/20 rounded-3xl p-10 text-center">
-            <div className="mb-8">
-              <span className="text-4xl text-primary mb-6 block">📤</span>
-              <h4 className="text-2xl font-bold text-foreground mb-6">Ready to Submit?</h4>
-              <p className="text-muted-foreground mb-8 leading-relaxed max-w-xl mx-auto">
-                The submission form includes sections for your research presentation, category selection, and academic information.
-              </p>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {/* Tutor Signup */}
+            <div className="glass bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/20 p-6 rounded-3xl text-center">
+              <h4 className="text-xl font-bold text-primary mb-4">Tutor Signup</h4>
+              <Button
+                onClick={() => window.open("https://forms.gle/YOUR_TUTOR_FORM_LINK", "_blank")}
+                className="bg-primary text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:bg-primary/90 shadow"
+              >
+                Start Teaching
+              </Button>
             </div>
-            
-            <div className="grid md:grid-cols-2 gap-6 mb-10">
-              <div className="text-left">
-                <h5 className="font-bold text-foreground mb-3">What You'll Upload:</h5>
-                <ul className="text-muted-foreground space-y-2">
-                  <li className="flex items-center"><i className="fas fa-check text-secondary mr-3"></i>Slideshow or poster file (PDF/PowerPoint)</li>
-                  <li className="flex items-center"><i className="fas fa-check text-secondary mr-3"></i>List of peer-reviewed sources analyzed</li>
-                  <li className="flex items-center"><i className="fas fa-check text-secondary mr-3"></i>Brief research summary</li>
-                </ul>
-              </div>
-              <div className="text-left">
-                <h5 className="font-bold text-foreground mb-3">Required Information:</h5>
-                <ul className="text-muted-foreground space-y-2">
-                  <li className="flex items-center"><i className="fas fa-check text-accent mr-3"></i>Category selection (Computation/Physics)</li>
-                  <li className="flex items-center"><i className="fas fa-check text-accent mr-3"></i>Student and school contact details</li>
-                  <li className="flex items-center"><i className="fas fa-check text-accent mr-3"></i>Competition terms agreement</li>
-                </ul>
-              </div>
+
+            {/* Leadership Application */}
+            <div className="glass bg-gradient-to-br from-accent/10 to-accent/5 border border-accent/20 p-6 rounded-3xl text-center">
+              <h4 className="text-xl font-bold text-accent mb-4">Leadership Application</h4>
+              <Button
+                onClick={() => window.open("https://forms.gle/YOUR_LEADERSHIP_FORM_LINK", "_blank")}
+                className="bg-accent text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:bg-accent/90 shadow"
+              >
+                Apply Now
+              </Button>
             </div>
-            
-            <Button
-              onClick={openGoogleForm}
-              className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white px-12 py-4 rounded-2xl font-bold text-lg transition-all duration-300 shadow-xl hover:shadow-2xl animate-glow"
-              data-testid="button-open-form"
-            >
-              <i className="fas fa-external-link-alt mr-3"></i>
-              Open Submission Form
-            </Button>
+
+            {/* Student Signup */}
+            <div className="glass bg-gradient-to-br from-secondary/10 to-secondary/5 border border-secondary/20 p-6 rounded-3xl text-center">
+              <h4 className="text-xl font-bold text-secondary mb-4">Student Signup</h4>
+              <Button
+                onClick={() => window.open("https://forms.gle/YOUR_STUDENT_FORM_LINK", "_blank")}
+                className="bg-secondary text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:bg-secondary/90 shadow"
+              >
+                Start Learning
+              </Button>
+            </div>
           </div>
         </div>
 
+
         {/* Support Information */}
         <div className="mt-16 glass bg-card/60 p-10 rounded-3xl border border-border/50">
-          <h3 className="text-2xl font-bold text-primary mb-8 text-center">Need Assistance?</h3>
-          <div className="grid md:grid-cols-2 gap-8">
+          <h3 className="text-3xl font-bold text-primary mb-10 text-center">Need Assistance?</h3>
+
+          <div className="flex justify-center items-center">
             <div className="text-center">
               <div className="w-16 h-16 bg-gradient-to-br from-secondary to-primary rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                 <i className="fas fa-laptop-code text-2xl text-white"></i>
               </div>
-              <h4 className="font-bold text-lg mb-3 text-foreground">Technical Support</h4>
-              <p className="text-muted-foreground mb-4 leading-relaxed">Having trouble with the submission form or file uploads?</p>
-              <p className="text-secondary font-bold text-lg">tech-support@quantumchallenge.org</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-accent to-quantum rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
-                <i className="fas fa-graduation-cap text-2xl text-white"></i>
-              </div>
-              <h4 className="font-bold text-lg mb-3 text-foreground">Academic Questions</h4>
-              <p className="text-muted-foreground mb-4 leading-relaxed">Questions about research requirements or categories?</p>
-              <p className="text-accent font-bold text-lg">academic@quantumchallenge.org</p>
+              <h4 className="font-bold text-xl mb-3 text-foreground">Class Rescheduling</h4>
+              <p className="text-muted-foreground mb-4 leading-relaxed text-lg">Please reschedule at least 24 hours before your previously scheduled session.</p>
+              <p className="text-accent font-bold text-xl">academic@TWP.org</p>
             </div>
           </div>
         </div>

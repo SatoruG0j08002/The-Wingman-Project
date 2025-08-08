@@ -26,19 +26,6 @@ export default function Contact() {
                 </div>
               </div>
               
-              <div className="glass bg-card/60 p-6 rounded-3xl border border-border/50 hover:border-accent/30 transition-all duration-300">
-                <div className="flex items-start">
-                  <div className="bg-gradient-to-br from-accent to-quantum text-white w-16 h-16 rounded-2xl flex items-center justify-center mr-6 shadow-lg">
-                    <span className="text-2xl">🏫</span>
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-xl text-foreground mb-2">School Partnerships</h3>
-                    <p className="text-muted-foreground mb-1">Working with local schools</p>
-                    <p className="text-sm text-muted-foreground">Building community connections</p>
-                  </div>
-                </div>
-              </div>
-              
               <div className="glass bg-card/60 p-6 rounded-3xl border border-border/50 hover:border-quantum/30 transition-all duration-300">
                 <div className="flex items-start">
                   <div className="bg-gradient-to-br from-quantum to-primary text-white w-16 h-16 rounded-2xl flex items-center justify-center mr-6 shadow-lg">
@@ -46,8 +33,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-xl text-foreground mb-2">Phone Support</h3>
-                    <p className="text-muted-foreground mb-1">+1 (555) 123-4567</p>
-                    <p className="text-sm text-muted-foreground">Mon-Fri, 9AM-5PM EST</p>
+                    <p className="text-muted-foreground mb-1">Coming soon!</p>
+                    <p className="text-sm text-muted-foreground">Mon-Fri, 9AM-5PM CST</p>
                   </div>
                 </div>
               </div>
